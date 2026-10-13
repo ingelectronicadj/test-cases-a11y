@@ -1,0 +1,2354 @@
+{
+  "source": "jira",
+  "jql": "project=RD AND issuetype=Test AND component=12_WEALTH_GLOBAL_POSITION AND summary ~ \"TC - [A11y]\"",
+  "tests": [
+    {
+      "key": "RD-91261",
+      "criterion": "1.1.1",
+      "title": "TC - [A11Y] - 1.1 Text Alternatives - 1.1.1 Non-text Content",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_IMG",
+        "A11Y_SCREENREADERS",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.1  Text Alternatives: Provide text alternatives for any non-text content Success Criterion  1.1.1 Non-text Content  (Level A)",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 1.1.1 Non-text Content (Level A)\nCoverage: axe-core automated rules\naxe-core rules: aria-meter-name, aria-progressbar-name, image-alt, input-image-alt, object-alt, role-img-alt, svg-img-alt\nTag: wcag111\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['aria-meter-name', 'aria-progressbar-name', 'image-alt', 'input-image-alt', 'object-alt', 'role-img-alt', 'svg-img-alt'] }) or to tag 'wcag111'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/aria-meter-name"
+    },
+    {
+      "key": "RD-91451",
+      "criterion": "1.2.1",
+      "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.1 Audio-only and Video-only (Prerecorded)",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.1 Audio-only and Video-only (Prerecorded)",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 1.2.1 Audio-only and Video-only (Prerecorded) (Level A)\nCoverage: axe-core automated rules\naxe-core rules: audio-caption\nTag: wcag121\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['audio-caption'] }) or to tag 'wcag121'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/audio-caption"
+    },
+    {
+      "key": "RD-91458",
+      "criterion": "1.2.2",
+      "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.2 Captions (Prerecorded)",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.2 Captions (Prerecorded)",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 1.2.2 Captions (Prerecorded) (Level A)\nCoverage: axe-core automated rules\naxe-core rules: video-caption\nTag: wcag122\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['video-caption'] }) or to tag 'wcag122'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/video-caption"
+    },
+    {
+      "key": "RD-91460",
+      "criterion": "1.2.3",
+      "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.3 Audio Description or Media Alternative (Prerecorded)",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.3 Audio Description or Media Alternative (Prerecorded)",
+      "steps": [
+        {
+          "action": "Play videos with essential visual content and verify descriptions",
+          "data": "",
+          "result": "Audio description or text alternative must exist describing important visual information"
+        },
+        {
+          "action": "Verify that alternative covers all critical visual elements for comprehension",
+          "data": "",
+          "result": "Description must include actions, expressions, scene changes, and unspoken on-screen text"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91462",
+      "criterion": "1.2.4",
+      "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.4 Captions (Live)",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.4 Captions (Live)",
+      "steps": [
+        {
+          "action": "Access live broadcasts if available",
+          "data": "",
+          "result": "Live broadcasts must have real-time captioning"
+        },
+        {
+          "action": "Verify accuracy and acceptable delay of live captions",
+          "data": "",
+          "result": "Captions must reflect spoken audio with reasonable accuracy and minimal delay (maximum 3-5 seconds)"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91465",
+      "criterion": "1.2.5",
+      "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.5 Audio Description (Prerecorded)",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.5 Audio Description (Prerecorded)",
+      "steps": [
+        {
+          "action": "Identify prerecorded videos containing essential visual information not conveyed in audio",
+          "data": "",
+          "result": "Videos must include audio description covering actions, characters, scene changes, and relevant visual elements"
+        },
+        {
+          "action": "Play video with audio description enabled and verify synchronization",
+          "data": "",
+          "result": "Audio description must be inserted in natural pauses without overlapping main audio"
+        },
+        {
+          "action": "Verify that audio description covers all critical visual elements",
+          "data": "",
+          "result": "Essential visual information must be fully described for blind or low vision users"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91467",
+      "criterion": "1.2.6",
+      "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.6 Sign Language (Prerecorded)",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.6 Sign Language (Prerecorded) General Objective: To verify that pre-recorded video content with audio provides extended audio descriptions when necessary to understand the content. This test case verifies whether a pre-recorded video on the web site provides extended audio descriptions at times necessary to understand the content. Extended audio descriptions provide information about actions, characters, scenes, and on-screen information that cannot be understood from the original audio of the pre-recorded video alone. Expected Result: The pre-recorded video with audio provides extended audio descriptions at times necessary to understand the content. The extended audio descriptions can be activated and provide additional information that is not available in the original audio of the video.",
+      "steps": [
+        {
+          "action": "Identify prerecorded audio content (videos with narration or dialogue)",
+          "data": "",
+          "result": "Videos must include sign language interpretation visible on screen or activatable"
+        },
+        {
+          "action": "Verify visibility and size of sign language interpreter",
+          "data": "",
+          "result": "Interpreter must be clearly visible, with adequate contrast and sufficient size to distinguish signs"
+        },
+        {
+          "action": "Verify synchronization between audio and sign language",
+          "data": "",
+          "result": "Sign interpretation must be synchronized with spoken audio without significant delays"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91470",
+      "criterion": "1.2.7",
+      "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.7 Extended Audio Description (Prerecorded)",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.7 Extended Audio Description (Prerecorded)",
+      "steps": [
+        {
+          "action": "Identify videos where natural pauses are insufficient for audio description",
+          "data": "",
+          "result": "Video must automatically pause to allow extended audio description of complex visual information"
+        },
+        {
+          "action": "Play video with extended audio description and verify pauses",
+          "data": "",
+          "result": "Video must pause when needed to describe visual elements, then continue automatically"
+        },
+        {
+          "action": "Verify user control over extended audio description",
+          "data": "",
+          "result": "User must be able to enable or disable extended audio description per preference"
+        },
+        {
+          "action": "Confirm that extended description does not interfere with content comprehension",
+          "data": "",
+          "result": "Pauses and descriptions must integrate naturally without causing confusion or loss of narrative context"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91474",
+      "criterion": "1.2.8",
+      "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.8 Media Alternative (Prerecorded)",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.8 Media Alternative (Prerecorded)",
+      "steps": [
+        {
+          "action": "Locate prerecorded videos and verify availability of complete text document",
+          "data": "",
+          "result": "A complete text transcript must exist including dialogues, visual descriptions, and relevant sounds"
+        },
+        {
+          "action": "Review that text alternative describes complete sequence of visual events",
+          "data": "",
+          "result": "Document must function as independent alternative, describing all essential visual information chronologically"
+        },
+        {
+          "action": "Verify accessibility of text alternative",
+          "data": "",
+          "result": "Transcript must be in accessible format (HTML, structured document) near the original video"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91475",
+      "criterion": "1.2.9",
+      "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.9 Audio-only (Live)",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.9 Audio-only (Live)",
+      "steps": [
+        {
+          "action": "Access live audio-only broadcast (podcast, web radio, conference)",
+          "data": "",
+          "result": "An equivalent alternative must be presented synchronized with the live audio"
+        },
+        {
+          "action": "Verify delivery method of synchronized alternative",
+          "data": "",
+          "result": "Alternative can be real-time transcript, synchronized text description, or updated equivalent content"
+        },
+        {
+          "action": "Verify that alternative captures essential information from live audio",
+          "data": "",
+          "result": "Text content must reflect critical audio information with minimal acceptable delay"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91476",
+      "criterion": "1.3.1",
+      "title": "TC - [A11Y] - 1.3 Adaptable - 1.3.1 Info and Relationships",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_SCREENREADERS",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.3  Create content that can be presented in different ways (for example simpler layout) without losing information or structure. Success Criteria:    1.3.1 Info and Relationships",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 1.3.1 Info and Relationships (Level A)\nCoverage: axe-core automated rules\naxe-core rules: aria-hidden-body, aria-required-children, aria-required-parent, definition-list, dlitem, list, listitem, td-headers-attr, th-has-data-cells, p-as-heading, table-fake-caption, td-has-header\nTag: wcag131\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['aria-hidden-body', 'aria-required-children', 'aria-required-parent', 'definition-list', 'dlitem', 'list', 'listitem', 'td-headers-attr', 'th-has-data-cells', 'p-as-heading', 'table-fake-caption', 'td-has-header'] }) or to tag 'wcag131'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/aria-hidden-body"
+    },
+    {
+      "key": "RD-91478",
+      "criterion": "1.3.2",
+      "title": "TC - [A11Y] - 1.3 Adaptable - 1.3.2 Meaningful Sequence",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_SCREENREADERS",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.3  Create content that can be presented in different ways (for example simpler layout) without losing information or structure. Success Criteria:    1.3.2 Meaningful Sequence",
+      "steps": [
+        {
+          "action": "Navigate the site using only Tab and verify reading order",
+          "data": "",
+          "result": "Tab and DOM order must match the logical visual order of content"
+        },
+        {
+          "action": "Use screen reader to verify content reading order",
+          "data": "",
+          "result": "Reading order must be logical and coherent, without confusing jumps caused by CSS positioning"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91480",
+      "criterion": "1.3.3",
+      "title": "TC - [A11Y] - 1.3 Adaptable - 1.3.3 Sensory Characteristics",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_SCREENREADERS",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.3  Create content that can be presented in different ways (for example simpler layout) without losing information or structure. Success Criteria:    1.3.3 Sensory Characteristics",
+      "steps": [
+        {
+          "action": "Identify instructions that use only shape, color, or position",
+          "data": "",
+          "result": "Instructions must include descriptive text in addition to visual references (e.g., 'green Submit button' not just 'green button')"
+        },
+        {
+          "action": "Verify that critical information does not rely solely on sensory elements",
+          "data": "",
+          "result": "Errors, alerts, or process steps must be communicated with text in addition to color, icons, or sounds"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91481",
+      "criterion": "1.3.4",
+      "title": "TC - [A11Y] - 1.3 Adaptable - 1.3.4 Orientation",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Automated",
+      "labels": [
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_LANDSCAPE",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.3  Create content that can be presented in different ways (for example simpler layout) without losing information or structure. Success Criteria:    1.3.4 Orientation",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 1.3.4 Orientation (Level AA)\nCoverage: axe-core automated rules\naxe-core rules: css-orientation-lock\nTag: wcag134\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['css-orientation-lock'] }) or to tag 'wcag134'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/css-orientation-lock"
+    },
+    {
+      "key": "RD-91482",
+      "criterion": "1.3.5",
+      "title": "TC - [A11Y] - 1.3 Adaptable - 1.3.5 Identify Input Purpose",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.3  Create content that can be presented in different ways (for example simpler layout) without losing information or structure. Success Criteria:    1.3.5 Identify Input Purpose",
+      "steps": [
+        {
+          "action": "Inspect form fields in source code",
+          "data": "",
+          "result": "Common fields (name, email, phone) must have appropriate autocomplete attribute"
+        },
+        {
+          "action": "Test autocomplete with browser saved data",
+          "data": "",
+          "result": "Fields with correct autocomplete must suggest user saved values when typing begins"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91483",
+      "criterion": "1.3.6",
+      "title": "TC - [A11Y] - 1.3 Adaptable - 1.3.6 Identify Purpose",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.3  Create content that can be presented in different ways (for example simpler layout) without losing information or structure. Success Criteria:    1.3.6 Identify Purpose",
+      "steps": [
+        {
+          "action": "Review complex UI components and verify programmatic purpose",
+          "data": "",
+          "result": "Components must identify their purpose through ARIA attributes or HTML semantics for assistive technologies"
+        },
+        {
+          "action": "Verify icons and interactive elements with accessibility inspector",
+          "data": "",
+          "result": "Buttons, links, and icons must expose their function through appropriate roles and accessible names"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91484",
+      "criterion": "1.4.1",
+      "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.1 Use of Color",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.1 Use of Color",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 1.4.1 Use of Color (Level A)\nCoverage: axe-core automated rules\naxe-core rules: link-in-text-block\nTag: wcag141\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['link-in-text-block'] }) or to tag 'wcag141'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/link-in-text-block"
+    },
+    {
+      "key": "RD-91485",
+      "criterion": "1.4.2",
+      "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.2 Audio Control",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.2 Audio Control",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 1.4.2 Audio Control (Level A)\nCoverage: axe-core automated rules\naxe-core rules: no-autoplay-audio\nTag: wcag142\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['no-autoplay-audio'] }) or to tag 'wcag142'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/no-autoplay-audio"
+    },
+    {
+      "key": "RD-91486",
+      "criterion": "1.4.3",
+      "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.3 Contrast (Minimum)",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Automated",
+      "labels": [
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.3 Contrast (Minimum)",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 1.4.3 Contrast (Minimum) (Level AA)\nCoverage: axe-core automated rules\naxe-core rules: color-contrast\nTag: wcag143\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['color-contrast'] }) or to tag 'wcag143'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/color-contrast"
+    },
+    {
+      "key": "RD-91487",
+      "criterion": "1.4.4",
+      "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.4 Resize Text",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Automated",
+      "labels": [
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH",
+        "A11Y_ZOOM",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.4 Resize text",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 1.4.4 Resize Text (Level AA)\nCoverage: axe-core automated rules\naxe-core rules: meta-viewport\nTag: wcag144\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['meta-viewport'] }) or to tag 'wcag144'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/meta-viewport"
+    },
+    {
+      "key": "RD-91488",
+      "criterion": "1.4.5",
+      "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.5 Images of Text",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.5 Images of Text",
+      "steps": [
+        {
+          "action": "Identify text rendered as image",
+          "data": "",
+          "result": "Text must be in real HTML, not images (except logos or special cases)"
+        },
+        {
+          "action": "Inspect graphics and banners for embedded text",
+          "data": "",
+          "result": "Titles, labels, and informative text must be CSS-styled HTML text, not images"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91489",
+      "criterion": "1.4.6",
+      "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.6 Contrast (Enhanced)",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Automated",
+      "labels": [
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.6 Contrast (Enhanced)",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 1.4.6 Contrast (Enhanced) (Level AAA)\nCoverage: axe-core automated rules\naxe-core rules: color-contrast-enhanced\nTag: wcag146\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['color-contrast-enhanced'] }) or to tag 'wcag146'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/color-contrast-enhanced"
+    },
+    {
+      "key": "RD-91490",
+      "criterion": "1.4.7",
+      "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.7 Low or No Background Audio",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.7 Low or No Background Audio",
+      "steps": [
+        {
+          "action": "Play audio content and evaluate background sound presence",
+          "data": "",
+          "result": "Background audio must be removable, 20dB lower than main audio, or non-existent"
+        },
+        {
+          "action": "Verify control to disable background music if present",
+          "data": "",
+          "result": "User must be able to mute or reduce ambient audio without affecting main narration"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91491",
+      "criterion": "1.4.8",
+      "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.8 Visual Presentation",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.8 Visual Presentation",
+      "steps": [
+        {
+          "action": "Verify if user can customize spacing, column width, alignment, and fonts",
+          "data": "",
+          "result": "System must allow visual presentation adjustments without loss of functionality or content"
+        },
+        {
+          "action": "Test readability with OS settings (text size, high contrast)",
+          "data": "",
+          "result": "Content must respect user preferences defined at system level"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91492",
+      "criterion": "1.4.9",
+      "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.9 Images of Text (No Exception)",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.9 Images of Text (No Exception)",
+      "steps": [
+        {
+          "action": "Thoroughly review entire site for text rendered as images",
+          "data": "",
+          "result": "No text in image format must exist, all must be real HTML text (no exceptions except logos)"
+        },
+        {
+          "action": "Inspect decorative elements and verify text is styled with CSS",
+          "data": "",
+          "result": "Visual text effects must be achieved with CSS, not by converting text to images"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91493",
+      "criterion": "1.4.10",
+      "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.10 Reflow",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_REFLOW",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.10 Reflow",
+      "steps": [
+        {
+          "action": "Resize window to 320px width or zoom to 400%",
+          "data": "",
+          "result": "Horizontal scrolling must not be required to read content (except complex tables)"
+        },
+        {
+          "action": "Test on real mobile device with narrow viewport",
+          "data": "",
+          "result": "All content must adapt fluidly without clipping or need for bidirectional scrolling"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91494",
+      "criterion": "1.4.11",
+      "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.11 Non-text Contrast",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.11 Non-text Contrast",
+      "steps": [
+        {
+          "action": "Measure contrast of UI components and focus states",
+          "data": "",
+          "result": "Minimum 3:1 contrast for component borders, functional icons, and focus indicators"
+        },
+        {
+          "action": "Verify contrast of informative graphic elements (charts, status icons)",
+          "data": "",
+          "result": "Visual elements conveying information must be clearly distinguishable from background"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91495",
+      "criterion": "1.4.12",
+      "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.12 Text Spacing",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Automated",
+      "labels": [
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_TEST-SPACING",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.12 Text Spacing",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 1.4.12 Text Spacing (Level AA)\nCoverage: axe-core automated rules\naxe-core rules: avoid-inline-spacing\nTag: wcag1412\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['avoid-inline-spacing'] }) or to tag 'wcag1412'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/avoid-inline-spacing"
+    },
+    {
+      "key": "RD-91496",
+      "criterion": "1.4.13",
+      "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.13 Content on Hover or Focus",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.13 Content on Hover or Focus",
+      "steps": [
+        {
+          "action": "Activate tooltips and popup content with hover and keyboard",
+          "data": "",
+          "result": "Additional content must be keyboard accessible, remain visible, and be dismissible without moving pointer"
+        },
+        {
+          "action": "Verify that popup content does not disappear when moving pointer over it",
+          "data": "",
+          "result": "User must be able to move cursor over tooltip to read or interact without it disappearing"
+        },
+        {
+          "action": "Verify accessible dismiss mechanism (ESC or close button)",
+          "data": "",
+          "result": "Popup content must be dismissible without moving pointer from the trigger that activated it"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91497",
+      "criterion": "2.1.1",
+      "title": "TC - [A11Y] - 2.1 Keyboard Accessible - 2.1.1 Keyboard",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_KEYBOARD",
+        "A11Y_SCREENREADERS",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.1  All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. Success Criteria: 2.1.1 Keyboard   ",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 2.1.1 Keyboard (Level A)\nCoverage: axe-core automated rules\naxe-core rules: frame-focusable-content, scrollable-region-focusable, server-side-image-map\nTag: wcag211\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['frame-focusable-content', 'scrollable-region-focusable', 'server-side-image-map'] }) or to tag 'wcag211'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/frame-focusable-content"
+    },
+    {
+      "key": "RD-91498",
+      "criterion": "2.1.2",
+      "title": "TC - [A11Y] - 2.1 Keyboard Accessible - 2.1.2 No Keyboard Trap",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_KEYBOARD",
+        "A11Y_MANUAL",
+        "A11Y_SCREENREADERS",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.1  All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. Success Criteria: 2.1.2 No Keyboard Trap  ",
+      "steps": [
+        {
+          "action": "Navigate the entire page/component using only Tab and Shift+Tab",
+          "data": "",
+          "result": "Focus must move through all interactive elements and exit freely without being trapped"
+        },
+        {
+          "action": "Test modals, dialogs, and overlays with keyboard navigation",
+          "data": "",
+          "result": "Focus must move freely within the component and it must be closable via Esc or a keyboard-accessible close control"
+        },
+        {
+          "action": "If content requires non-standard keys to exit focus, verify users are informed",
+          "data": "",
+          "result": "Instructions for un-trapping focus must be visibly provided"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91499",
+      "criterion": "2.1.3",
+      "title": "TC - [A11Y] - 2.1 Keyboard Accessible - 2.1.3 Keyboard (No Exception)",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Automated",
+      "labels": [
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.1  Make all functionality available from a keyboard. Success Criteria:    2.1.3 Keyboard (No Exception)",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 2.1.3 Keyboard (No Exception) (Level AAA)\nCoverage: axe-core automated rules\naxe-core rules: scrollable-region-focusable\nTag: wcag213\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['scrollable-region-focusable'] }) or to tag 'wcag213'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/scrollable-region-focusable"
+    },
+    {
+      "key": "RD-91500",
+      "criterion": "2.1.4",
+      "title": "TC - [A11Y] - 2.1 Keyboard Accessible - 2.1.4 Character Key Shortcuts",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_KEYBOARD",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.1  All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. Success Criteria: 2.1.4 Character Key Shortcut",
+      "steps": [
+        {
+          "action": "Identify single-key shortcuts (letter, number, or punctuation) implemented in the interface",
+          "data": "",
+          "result": "Each shortcut must be disableable, remappable, or active only while its component has focus"
+        },
+        {
+          "action": "Verify shortcuts do not interfere with screen readers or assistive tools",
+          "data": "",
+          "result": "Key combinations must avoid conflicts with assistive technology commands"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91501",
+      "criterion": "2.2.1",
+      "title": "TC - [A11Y] - 2.2 Enough Time - 2.2.1 Timing Adjustable",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_FORMS",
+        "A11Y_SCREENREADERS",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.2  Give users enough time to read and use content. Success Criteria:    2.2.1 Timing Adjustable",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 2.2.1 Timing Adjustable (Level A)\nCoverage: axe-core automated rules\naxe-core rules: meta-refresh\nTag: wcag221\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['meta-refresh'] }) or to tag 'wcag221'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/meta-refresh"
+    },
+    {
+      "key": "RD-91502",
+      "criterion": "2.2.2",
+      "title": "TC - [A11Y] - 2.2 Enough Time - 2.2.2 Pause, Stop, Hide",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.2  Give users enough time to read and use content. Success Criteria:    2.2.2 Pause, Stop, Hide",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 2.2.2 Pause, Stop, Hide (Level A)\nCoverage: axe-core automated rules\naxe-core rules: blink, marquee\nTag: wcag222\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['blink', 'marquee'] }) or to tag 'wcag222'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/blink"
+    },
+    {
+      "key": "RD-91503",
+      "criterion": "2.2.3",
+      "title": "TC - [A11Y] - 2.2 Enough Time - 2.2.3 No Timing",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.2  Give users enough time to read and use content. Success Criteria:    2.2.3 No Timing",
+      "steps": [
+        {
+          "action": "Verify that all functionality and content can be used without any time limits",
+          "data": "",
+          "result": "Tasks must be completable without time restrictions or interruptions"
+        },
+        {
+          "action": "Document exceptions where time is a real-time requirement",
+          "data": "",
+          "result": "Only live essential events (e.g. real-time auctions) may be exempt; all others must have no timing"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91504",
+      "criterion": "2.2.4",
+      "title": "TC - [A11Y] - 2.2 Enough Time - 2.2.4 Interruptions",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Automated",
+      "labels": [
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.2  Give users enough time to read and use content. Success Criteria:    2.2.4 Interruptions",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 2.2.4 Interruptions (Level AAA)\nCoverage: axe-core automated rules\naxe-core rules: meta-refresh-no-exceptions\nTag: wcag224\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['meta-refresh-no-exceptions'] }) or to tag 'wcag224'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/meta-refresh-no-exceptions"
+    },
+    {
+      "key": "RD-91505",
+      "criterion": "2.2.5",
+      "title": "TC - [A11Y] - 2.2 Enough Time - 2.2.5 Re-authenticating",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.2  Give users enough time to read and use content. Success Criteria:    2.2.5 Re-authenticating",
+      "steps": [
+        {
+          "action": "Let the session expire mid-task and log in again",
+          "data": "",
+          "result": "After re-authenticating, the user must continue the activity without losing previously entered data"
+        },
+        {
+          "action": "Test with long forms and verify data recovery",
+          "data": "",
+          "result": "In-progress information must be auto-saved or recoverable after relogin"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91506",
+      "criterion": "2.2.6",
+      "title": "TC - [A11Y] - 2.2 Enough Time - 2.2.6 Timeouts",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.2  Give users enough time to read and use content. Success Criteria:    2.2.6 Timeouts",
+      "steps": [
+        {
+          "action": "Verify users are warned about session inactivity timeout",
+          "data": "",
+          "result": "A warning must be presented in time for the user to react (at least 20 seconds) via an accessible notification"
+        },
+        {
+          "action": "Verify user can save work before timeout",
+          "data": "",
+          "result": "Warning must include a clear option to save progress or extend the session"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91539",
+      "criterion": "2.3.1",
+      "title": "TC - [A11Y] - 2.3 Seizures and Physical Reactions - 2.3.1 Three Flashes or Below Threshold",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.3  Do not design content in a way that is known to cause seizures or physical reactions. Success Criteria:    2.3.1 Three Flashes or Below Threshold",
+      "steps": [
+        {
+          "action": "Review site animations and transitions",
+          "data": "",
+          "result": "No content should flash more than 3 times per second"
+        },
+        {
+          "action": "Use PEAT (Photosensitive Epilepsy Analysis Tool) if available",
+          "data": "",
+          "result": "Analyze multimedia content to identify flashes that could cause seizures"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91540",
+      "criterion": "2.3.2",
+      "title": "TC - [A11Y] - 2.3 Seizures and Physical Reactions - 2.3.2 Three Flashes",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.3  Do not design content in a way that is known to cause seizures or physical reactions. Success Criteria:    2.3.2 Three Flashes",
+      "steps": [
+        {
+          "action": "Thoroughly analyze animations, videos, and dynamic content",
+          "data": "",
+          "result": "No flash exceeding safe limits must exist, without exceptions"
+        },
+        {
+          "action": "Review embedded third-party content (ads, external videos)",
+          "data": "",
+          "result": "External content must not contain dangerous flashes or must be disableable"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91541",
+      "criterion": "2.3.3",
+      "title": "TC - [A11Y] - 2.3 Seizures and Physical Reactions - 2.3.3 Animation from Interactions",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.3  Do not design content in a way that is known to cause seizures or physical reactions. Success Criteria:    2.3.3 Animation from Interactions",
+      "steps": [
+        {
+          "action": "Verify motion animations triggered by scroll or interaction",
+          "data": "",
+          "result": "User must be able to disable non-essential motion animations"
+        },
+        {
+          "action": "Verify respect for system prefers-reduced-motion preference",
+          "data": "",
+          "result": "Site must detect and respect OS setting to reduce motion"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91542",
+      "criterion": "2.4.1",
+      "title": "TC - [A11Y] - 2.4 Navigable - 2.4.1 Bypass Blocks",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_SCREENREADERS",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.1 Bypass Blocks",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 2.4.1 Bypass Blocks (Level A)\nCoverage: axe-core automated rules\naxe-core rules: bypass\nTag: wcag241\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['bypass'] }) or to tag 'wcag241'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/bypass"
+    },
+    {
+      "key": "RD-91543",
+      "criterion": "2.4.2",
+      "title": "TC - [A11Y] - 2.4 Navigable - 2.4.2 Page Titled",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.2 Page Titled",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 2.4.2 Page Titled (Level A)\nCoverage: axe-core automated rules\naxe-core rules: document-title\nTag: wcag242\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['document-title'] }) or to tag 'wcag242'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/document-title"
+    },
+    {
+      "key": "RD-91546",
+      "criterion": "2.4.3",
+      "title": "TC - [A11Y] - 2.4 Navigable - 2.4.3 Focus Order",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_KEYBOARD",
+        "A11Y_MANUAL",
+        "A11Y_SCREENREADERS",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.3 Focus Order",
+      "steps": [
+        {
+          "action": "Navigate with Tab in order and verify visual logic",
+          "data": "",
+          "result": "Focus order must follow logical sequence left to right, top to bottom"
+        },
+        {
+          "action": "Identify elements with positive tabindex and evaluate necessity",
+          "data": "",
+          "result": "Avoid tabindex greater than 0, order must be controlled through logical DOM structure"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91547",
+      "criterion": "2.4.4",
+      "title": "TC - [A11Y] - 2.4 Navigable - 2.4.4 Link Purpose (In Context)",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_SCREENREADERS",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.4 Link Purpose (In Context)",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 2.4.4 Link Purpose (In Context) (Level A)\nCoverage: axe-core automated rules\naxe-core rules: area-alt, link-name\nTag: wcag244\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['area-alt', 'link-name'] }) or to tag 'wcag244'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/area-alt"
+    },
+    {
+      "key": "RD-91548",
+      "criterion": "2.4.5",
+      "title": "TC - [A11Y] - 2.4 Navigable - 2.4.5 Multiple Ways",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.5 Multiple Ways",
+      "steps": [
+        {
+          "action": "Try to locate an internal page in different ways",
+          "data": "",
+          "result": "Navigation menu, internal search, sitemap, or breadcrumbs must exist"
+        },
+        {
+          "action": "Verify at least two navigation methods are available",
+          "data": "",
+          "result": "User must be able to choose between different strategies to locate content"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91549",
+      "criterion": "2.4.6",
+      "title": "TC - [A11Y] - 2.4 Navigable - 2.4.6 Headings and Labels",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_SCREENREADERS",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.6 Headings and Labels",
+      "steps": [
+        {
+          "action": "Verify page headings are descriptive and reflect the content structure",
+          "data": "",
+          "result": "Each heading must clearly describe the topic or purpose of its section"
+        },
+        {
+          "action": "Use screen reader to navigate by headings",
+          "data": "",
+          "result": "Heading structure must allow quick understanding of content organization"
+        },
+        {
+          "action": "Check labels of form fields and interactive controls",
+          "data": "",
+          "result": "All labels must be descriptive and clearly identify the control purpose"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91550",
+      "criterion": "2.4.7",
+      "title": "TC - [A11Y] - 2.4 Navigable - 2.4.7 Focus Visible",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_KEYBOARD",
+        "A11Y_MANUAL",
+        "A11Y_SCREENREADERS",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.7 Focus Visible",
+      "steps": [
+        {
+          "action": "Navigate with Tab and observe focus indicator",
+          "data": "",
+          "result": "Interactive elements must show clear contrasted visual indicator when focused"
+        },
+        {
+          "action": "Verify outline is not disabled without visual replacement",
+          "data": "",
+          "result": "If default outline is removed, equally visible alternative indicator must exist"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91551",
+      "criterion": "2.4.8",
+      "title": "TC - [A11Y] - 2.4 Navigable - 2.4.8 Location",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.8 Location",
+      "steps": [
+        {
+          "action": "Navigate through different site sections and verify location indicators",
+          "data": "",
+          "result": "Breadcrumbs, section titles, or indicators showing user location must exist"
+        },
+        {
+          "action": "Review that breadcrumbs are accessible and reflect correct hierarchy",
+          "data": "",
+          "result": "Breadcrumbs must be keyboard navigable and structured with ordered list"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91552",
+      "criterion": "2.4.9",
+      "title": "TC - [A11Y] - 2.4 Navigable - 2.4.9 Link Purpose (Link Only)",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Automated",
+      "labels": [
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.9 Link Purpose (Link Only)",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 2.4.9 Link Purpose (Link Only) (Level AAA)\nCoverage: axe-core automated rules\naxe-core rules: identical-links-same-purpose\nTag: wcag249\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['identical-links-same-purpose'] }) or to tag 'wcag249'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/identical-links-same-purpose"
+    },
+    {
+      "key": "RD-91553",
+      "criterion": "2.4.10",
+      "title": "TC - [A11Y] - 2.4 Navigable - 2.4.10 Section Headings",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.10 Section Headings",
+      "steps": [
+        {
+          "action": "Review content structure and heading usage",
+          "data": "",
+          "result": "Content must be organized with descriptive headings dividing information into logical sections"
+        },
+        {
+          "action": "Verify no long text blocks exist without intermediate headings",
+          "data": "",
+          "result": "Extensive content must be subdivided with headings facilitating scanning and navigation"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91555",
+      "criterion": "2.4.11",
+      "title": "TC - [A11Y] - 2.4 Navigable - 2.4.11 Focus Not Obscured (Minimum)",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_KEYBOARD",
+        "A11Y_MANUAL",
+        "A11Y_SCREENREADERS",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.11 Focus Not Obscured (Minimum)",
+      "steps": [
+        {
+          "action": "Navigate with keyboard and verify focus visibility on elements near edges",
+          "data": "",
+          "result": "At least part of focus indicator must remain visible, not completely hidden by other elements"
+        },
+        {
+          "action": "Test navigation in areas with sticky headers or floating elements",
+          "data": "",
+          "result": "Sticky bars must not completely cover the focused element"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91556",
+      "criterion": "2.4.12",
+      "title": "TC - [A11Y] - 2.4 Navigable - 2.4.12 Focus Not Obscured (Enhanced)",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.12 Focus Not Obscured (Enhanced)",
+      "steps": [
+        {
+          "action": "Verify focus is completely visible in all situations",
+          "data": "",
+          "result": "Focus indicator must be completely visible without any obstruction by other elements"
+        },
+        {
+          "action": "Implement auto-scroll when element receives focus outside viewport",
+          "data": "",
+          "result": "Content must auto-adjust to fully show the focused element"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91557",
+      "criterion": "2.4.13",
+      "title": "TC - [A11Y] - 2.4 Navigable - 2.4.13 Focus Appearance",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.13 Focus Appearance",
+      "steps": [
+        {
+          "action": "Measure focus indicator area and contrast with specialized tools",
+          "data": "",
+          "result": "Indicator must have sufficient minimum area and high contrast for maximum visibility"
+        },
+        {
+          "action": "Calculate that indicator has minimum 2 CSS pixels perimeter or equivalent area",
+          "data": "",
+          "result": "Indicator thickness and area must meet specific WCAG 2.2 requirements"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91558",
+      "criterion": "2.5.1",
+      "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.1 Pointer Gestures",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_KEYBOARD",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.1 Pointer Gestures",
+      "steps": [
+        {
+          "action": "Identify functions activated by complex gestures (swipe, pinch)",
+          "data": "",
+          "result": "Functions must have alternative with simple single-point gestures (tap, click)"
+        },
+        {
+          "action": "Verify carousels, maps, and swipeable components",
+          "data": "",
+          "result": "Alternative buttons or controls must exist for users with motor limitations"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91559",
+      "criterion": "2.5.2",
+      "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.2 Pointer Cancellation",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_KEYBOARD",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.2 Pointer Cancellation",
+      "steps": [
+        {
+          "action": "Test activation of interactive elements",
+          "data": "",
+          "result": "Function must not execute on mousedown/touchstart, must allow cancellation by releasing outside target"
+        },
+        {
+          "action": "Verify accidental clicks can be cancelled by dragging outside",
+          "data": "",
+          "result": "User must be able to undo accidental activation by moving pointer before release"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91560",
+      "criterion": "2.5.3",
+      "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.3 Label in Name",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_FORMS",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.3 Label in Name",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 2.5.3 Label in Name (Level A)\nCoverage: axe-core automated rules\naxe-core rules: label-content-name-mismatch\nTag: wcag253\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['label-content-name-mismatch'] }) or to tag 'wcag253'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/label-content-name-mismatch"
+    },
+    {
+      "key": "RD-91561",
+      "criterion": "2.5.4",
+      "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.4 Motion Actuation",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.4 Motion Actuation",
+      "steps": [
+        {
+          "action": "Identify functions using accelerometer or gyroscope",
+          "data": "",
+          "result": "Functions activated by device motion must have standard UI alternative"
+        },
+        {
+          "action": "Verify setting to disable motion actuation",
+          "data": "",
+          "result": "User must be able to disable motion responses to avoid accidental activations"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91562",
+      "criterion": "2.5.5",
+      "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.5 Target Size (Enhanced)",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.5 Target Size (Enhanced)",
+      "steps": [
+        {
+          "action": "Measure dimensions of all pointer targets (buttons, links, controls)",
+          "data": "",
+          "result": "All targets must be at least 44x44 CSS pixels, except inline links within sentences or user-agent controlled elements"
+        },
+        {
+          "action": "Verify exceptions: inline text links, equivalent controls, or legal/presentation requirements",
+          "data": "",
+          "result": "If a target is smaller than 44x44, an equivalent alternative control with adequate size must exist"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91563",
+      "criterion": "2.5.6",
+      "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.6 Concurrent Input Mechanisms",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.6 Concurrent Input Mechanisms",
+      "steps": [
+        {
+          "action": "Test site with multiple simultaneous input devices (keyboard + mouse + touch)",
+          "data": "",
+          "result": "Site must support simultaneous use of different input mechanisms without restrictions"
+        },
+        {
+          "action": "Verify switching input method does not cause loss of functionality",
+          "data": "",
+          "result": "User must be able to freely switch between keyboard, mouse, and touch without issues"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91564",
+      "criterion": "2.5.7",
+      "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.7 Dragging Movements",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.7 Dragging Movements",
+      "steps": [
+        {
+          "action": "Identify drag and drop functions",
+          "data": "",
+          "result": "Drag and drop functions must have alternative with simple clicks or taps"
+        },
+        {
+          "action": "Test keyboard alternatives for reordering elements",
+          "data": "",
+          "result": "Reorderable lists must be manipulable with keyboard (arrows + Space/Enter)"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91565",
+      "criterion": "2.5.8",
+      "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.8 Target Size (Minimum)",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.8 Target Size (Minimum)",
+      "steps": [
+        {
+          "action": "Measure dimensions of touch controls (buttons, links)",
+          "data": "",
+          "result": "Touch targets must have minimum 24x24 CSS pixels or equivalent spacing"
+        },
+        {
+          "action": "Verify spacing between adjacent touch targets",
+          "data": "",
+          "result": "If targets are smaller than 24px, sufficient surrounding space must exist to avoid errors"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91566",
+      "criterion": "3.1.1",
+      "title": "TC - [A11Y] - 3.1 Readable - 3.1.1 Language of Page",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.1  Make text content readable and understandable. Success Criteria:    3.1.1 Language of Page",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 3.1.1 Language of Page (Level A)\nCoverage: axe-core automated rules\naxe-core rules: html-has-lang, html-lang-valid, html-xml-lang-mismatch\nTag: wcag311\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['html-has-lang', 'html-lang-valid', 'html-xml-lang-mismatch'] }) or to tag 'wcag311'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/html-has-lang"
+    },
+    {
+      "key": "RD-91568",
+      "criterion": "3.1.2",
+      "title": "TC - [A11Y] - 3.1 Readable - 3.1.2 Language of Parts",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Automated",
+      "labels": [
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.1  Make text content readable and understandable. Success Criteria:    3.1.2 Language of Parts",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 3.1.2 Language of Parts (Level AA)\nCoverage: axe-core automated rules\naxe-core rules: valid-lang\nTag: wcag312\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['valid-lang'] }) or to tag 'wcag312'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/valid-lang"
+    },
+    {
+      "key": "RD-91569",
+      "criterion": "3.1.3",
+      "title": "TC - [A11Y] - 3.1 Readable - 3.1.3 Unusual Words",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.1  Make text content readable and understandable. Success Criteria:    3.1.3 Unusual Words",
+      "steps": [
+        {
+          "action": "Identify jargon, technical terms, or unusual words in content",
+          "data": "",
+          "result": "Glossary, inline definitions, or mechanism to explain uncommon terms must exist"
+        },
+        {
+          "action": "Verify accessibility of definitions through links or dfn/abbr elements",
+          "data": "",
+          "result": "Specialized terms must link to accessible explanations"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91571",
+      "criterion": "3.1.4",
+      "title": "TC - [A11Y] - 3.1 Readable - 3.1.4 Abbreviations",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.1  Make text content readable and understandable. Success Criteria:    3.1.4 Abbreviations",
+      "steps": [
+        {
+          "action": "Locate abbreviations and acronyms in content",
+          "data": "",
+          "result": "First instance of abbreviations must include full expansion or link to definition"
+        },
+        {
+          "action": "Implement abbr element with title attribute where appropriate",
+          "data": "",
+          "result": "Abbreviations must be semantically marked for assistive technologies"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91574",
+      "criterion": "3.1.5",
+      "title": "TC - [A11Y] - 3.1 Readable - 3.1.5 Reading Level",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.1  Make text content readable and understandable. Success Criteria:    3.1.5 Reading Level",
+      "steps": [
+        {
+          "action": "Evaluate text complexity and required reading level",
+          "data": "",
+          "result": "Complex content must have simplified version or summary for lower secondary education level"
+        },
+        {
+          "action": "Use readability analysis tools (Flesch-Kincaid, INFLESZ)",
+          "data": "",
+          "result": "Measure readability indices and provide alternatives for technical or complex content"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91577",
+      "criterion": "3.1.6",
+      "title": "TC - [A11Y] - 3.1 Readable - 3.1.6 Pronunciation",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.1  Make text content readable and understandable. Success Criteria:    3.1.6 Pronunciation",
+      "steps": [
+        {
+          "action": "Identify words where pronunciation is critical for comprehension",
+          "data": "",
+          "result": "Mechanism to indicate pronunciation must exist (IPA, audio, phonetic text)"
+        },
+        {
+          "action": "Verify homographs and ambiguous terms with pronunciation guides",
+          "data": "",
+          "result": "Words with multiple pronunciations must be clarified when context is insufficient"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91578",
+      "criterion": "3.2.1",
+      "title": "TC - [A11Y] - 3.2 Predictable - 3.2.1 On Focus",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.2  Make Web pages appear and operate in predictable ways. Success Criteria:    3.2.1 On Focus",
+      "steps": [
+        {
+          "action": "Navigate with Tab through interactive elements",
+          "data": "",
+          "result": "No element should cause context change (navigation, submission) just by receiving focus"
+        },
+        {
+          "action": "Verify form fields do not submit when focused",
+          "data": "",
+          "result": "Focus must be independent of activation, changes must only occur with explicit action"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91579",
+      "criterion": "3.2.2",
+      "title": "TC - [A11Y] - 3.2 Predictable - 3.2.2 On Input",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.2  Make Web pages appear and operate in predictable ways. Success Criteria:    3.2.2 On Input",
+      "steps": [
+        {
+          "action": "Interact with forms and controls without activating submit button",
+          "data": "",
+          "result": "Field changes must not cause context change without prior warning or confirmation"
+        },
+        {
+          "action": "Test selects and radios that may cause automatic navigation",
+          "data": "",
+          "result": "If change causes action, prior warning or confirmation button must be required"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91580",
+      "criterion": "3.2.3",
+      "title": "TC - [A11Y] - 3.2 Predictable - 3.2.3 Consistent Navigation",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.2  Make Web pages appear and operate in predictable ways. Success Criteria:    3.2.3 Consistent Navigation",
+      "steps": [
+        {
+          "action": "Compare menus and navigation across different pages",
+          "data": "",
+          "result": "Repeated navigation elements must appear in same order across all pages"
+        },
+        {
+          "action": "Document location of global elements (search, login, main menu)",
+          "data": "",
+          "result": "Common components must maintain consistent position and order throughout site"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91581",
+      "criterion": "3.2.4",
+      "title": "TC - [A11Y] - 3.2 Predictable - 3.2.4 Consistent Identification",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.2  Make Web pages appear and operate in predictable ways. Success Criteria:    3.2.4 Consistent Identification",
+      "steps": [
+        {
+          "action": "Identify components with same function across different pages",
+          "data": "",
+          "result": "Equivalent components must use same labels, icons, and accessible names"
+        },
+        {
+          "action": "Verify consistency of icons and symbols throughout site",
+          "data": "",
+          "result": "Same icon must represent same function, avoid different symbols for identical actions"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91582",
+      "criterion": "3.2.5",
+      "title": "TC - [A11Y] - 3.2 Predictable - 3.2.5 Change on Request",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.2  Make Web pages appear and operate in predictable ways. Success Criteria:    3.2.5 Change on Request",
+      "steps": [
+        {
+          "action": "Verify significant changes require explicit user action",
+          "data": "",
+          "result": "Context changes, submissions, or navigation must not occur without explicit confirmation"
+        },
+        {
+          "action": "Identify and fix automatic submissions or unexpected redirects",
+          "data": "",
+          "result": "User must initiate all important changes through clear buttons or links"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91583",
+      "criterion": "3.2.6",
+      "title": "TC - [A11Y] - 3.2 Predictable - 3.2.6 Consistent Help",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.2 Predictable: Make Web pages appear and operate in predictable ways. Success Criteria: 3.2.6 Consistent Help (A) - If a Web page contains help mechanisms, and those mechanisms are repeated on multiple Web pages within a set of Web pages, they occur in the same relative order to other page content, unless a change is initiated by the user.",
+      "steps": [
+        {
+          "action": "Search for help mechanisms in different sections",
+          "data": "",
+          "result": "Help options must appear in consistent location throughout site"
+        },
+        {
+          "action": "Verify quick access to contact, FAQ, chat, or documentation",
+          "data": "",
+          "result": "Help must be available predictably in fixed location"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91588",
+      "criterion": "3.3.1",
+      "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.1 Error Identification",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.1 Error Identification",
+      "steps": [
+        {
+          "action": "Submit form with intentional errors",
+          "data": "",
+          "result": "Errors must be clearly identified in text, visually marked, and announced to screen readers"
+        },
+        {
+          "action": "Verify error messages use aria-describedby or aria-invalid",
+          "data": "",
+          "result": "Errors must be programmatically associated with affected fields for assistive technologies"
+        },
+        {
+          "action": "Verify focus moves to first error or error summary",
+          "data": "",
+          "result": "After validation, user must be clearly directed to found problems"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91590",
+      "criterion": "3.3.2",
+      "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.2 Labels or Instructions",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_FORMS",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.2 Labels or Instructions",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 3.3.2 Labels or Instructions (Level A)\nCoverage: axe-core automated rules\naxe-core rules: form-field-multiple-labels\nTag: wcag332\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['form-field-multiple-labels'] }) or to tag 'wcag332'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/form-field-multiple-labels"
+    },
+    {
+      "key": "RD-91595",
+      "criterion": "3.3.3",
+      "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.3 Error Suggestion",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.3 Error Suggestion",
+      "steps": [
+        {
+          "action": "Trigger validation errors in forms",
+          "data": "",
+          "result": "Error messages must suggest how to fix the specific problem"
+        },
+        {
+          "action": "Evaluate message quality: must be specific and solution-oriented",
+          "data": "",
+          "result": "Errors must explain what is wrong and how to fix it, not just indicate there is an error"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91597",
+      "criterion": "3.3.4",
+      "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.4 Error Prevention (Legal, Financial, Data)",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.4 Error Prevention (Legal, Financial, Data)",
+      "steps": [
+        {
+          "action": "Complete financial or legal transactions if they exist",
+          "data": "",
+          "result": "Must allow reviewing, confirming, and correcting information before final submission"
+        },
+        {
+          "action": "Verify confirmation page with option to edit before final submission",
+          "data": "",
+          "result": "Critical data must be shown in summary with ability to go back and modify"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91600",
+      "criterion": "3.3.5",
+      "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.5 Help",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.5 Help",
+      "steps": [
+        {
+          "action": "Search for contextual help in forms and complex tasks",
+          "data": "",
+          "result": "Available help must exist to complete tasks, visible or easily accessible"
+        },
+        {
+          "action": "Verify tooltips, help links, or info icons next to complex fields",
+          "data": "",
+          "result": "Help must be available in context where needed, not only on separate page"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91607",
+      "criterion": "3.3.6",
+      "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.6 Error Prevention (All)",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.6 Error Prevention (All)",
+      "steps": [
+        {
+          "action": "Identify forms that modify, delete, or compromise user data",
+          "data": "",
+          "result": "Reversible mechanism (undo), verification (review before submit), or explicit confirmation must exist"
+        },
+        {
+          "action": "Test form submission with critical information",
+          "data": "",
+          "result": "System must present review screen where user can verify and correct before confirming"
+        },
+        {
+          "action": "Verify availability of option to revert completed actions",
+          "data": "",
+          "result": "Destructive actions must allow undo or have grace period before permanent execution"
+        },
+        {
+          "action": "Verify explicit confirmations for irreversible actions",
+          "data": "",
+          "result": "Deletions, transfers, or permanent changes must require clear and specific additional confirmation"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91609",
+      "criterion": "3.3.7",
+      "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.7 Redundant Entry",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Manual",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.7 Redundant Entry",
+      "steps": [
+        {
+          "action": "Complete multi-step forms",
+          "data": "",
+          "result": "Previously provided information must auto-complete or be selectable, not re-entered"
+        },
+        {
+          "action": "Verify data from previous steps is pre-filled in later steps",
+          "data": "",
+          "result": "User must not re-type name, address, or other already entered data"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91610",
+      "criterion": "3.3.8",
+      "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.8 Accessible Authentication (Minimum)",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.8 Accessible Authentication (Minimum)",
+      "steps": [
+        {
+          "action": "Test login and authentication process",
+          "data": "",
+          "result": "Must offer accessible alternatives to visual CAPTCHA or cognitive tests (email, SMS, biometrics)"
+        },
+        {
+          "action": "Verify availability of magic link or OTP code authentication",
+          "data": "",
+          "result": "Alternative methods must be equally secure without requiring visual recognition"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-300554",
+      "criterion": "3.3.9",
+      "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.9 Accessible Authentication (Enhanced)",
+      "status": "To Do",
+      "level": "AAA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_FORMS",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AAA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.9 Accessible Authentication (Enhanced)",
+      "steps": [
+        {
+          "action": "Test authentication flows to confirm no cognitive function test is required at any step",
+          "data": "",
+          "result": "Login must not depend on memorization, transcription, or puzzle solving unless an accessible alternative or assistance is provided"
+        },
+        {
+          "action": "Verify password managers and copy-paste are fully supported in credential fields",
+          "data": "",
+          "result": "Users must be able to paste credentials or use password manager autofill/biometrics without restrictions"
+        }
+      ],
+      "automated_definition": null
+    },
+    {
+      "key": "RD-91613",
+      "criterion": "4.1.1",
+      "title": "TC - [A11Y] - 4.1 Compatible - 4.1.1 Parsing (Obsolete and removed)",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/4. Robust",
+      "description": "Guideline 4.1  Maximize compatibility with current and future user agents, including assistive technologies. Success Criteria:    4.1.1 Parsing",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 4.1.1 Parsing (Obsolete and removed) (Level A)\nCoverage: axe-core automated rules\naxe-core rules: duplicate-id-active, duplicate-id\nTag: wcag411\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['duplicate-id-active', 'duplicate-id'] }) or to tag 'wcag411'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/duplicate-id-active"
+    },
+    {
+      "key": "RD-91614",
+      "criterion": "4.1.2",
+      "title": "TC - [A11Y] - 4.1 Compatible - 4.1.2 Name, Role, Value",
+      "status": "To Do",
+      "level": "A",
+      "test_type": "Automated",
+      "labels": [
+        "A",
+        "A11Y",
+        "A11Y_AUTO",
+        "A11Y_FORMS",
+        "A11Y_WEALTH"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/4. Robust",
+      "description": "Guideline 4.1  Maximize compatibility with current and future user agents, including assistive technologies. Success Criteria:    4.1.2 Name, Role, Value",
+      "steps": [],
+      "automated_definition": "Automated accessibility test - axe-core\n\nWCAG 2.2 Success Criterion: 4.1.2 Name, Role, Value (Level A)\nCoverage: axe-core automated rules\naxe-core rules: area-alt, aria-allowed-attr, aria-braille-equivalent, aria-command-name, aria-conditional-attr, aria-deprecated-role, aria-hidden-body, aria-hidden-focus, aria-input-field-name, aria-prohibited-attr, aria-required-attr, aria-roles, aria-tab-name, aria-toggle-field-name, aria-tooltip-name, aria-valid-attr-value, aria-valid-attr, button-name, duplicate-id-aria, frame-title-unique, frame-title, input-button-name, input-image-alt, label, link-name, nested-interactive, select-name, summary-name, aria-roledescription\nTag: wcag412\n\nHow to run:\n- Inject axe-core in the page under test (e.g. @axe-core/playwright, cypress-axe or axe DevTools).\n- Restrict the scan to these rules (runOnly: { type: 'rule', values: ['area-alt', 'aria-allowed-attr', 'aria-braille-equivalent', 'aria-command-name', 'aria-conditional-attr', 'aria-deprecated-role', 'aria-hidden-body', 'aria-hidden-focus', 'aria-input-field-name', 'aria-prohibited-attr', 'aria-required-attr', 'aria-roles', 'aria-tab-name', 'aria-toggle-field-name', 'aria-tooltip-name', 'aria-valid-attr-value', 'aria-valid-attr', 'button-name', 'duplicate-id-aria', 'frame-title-unique', 'frame-title', 'input-button-name', 'input-image-alt', 'label', 'link-name', 'nested-interactive', 'select-name', 'summary-name', 'aria-roledescription'] }) or to tag 'wcag412'.\n- Pass criteria: zero violations reported for the rules above.\n\nReference: https://dequeuniversity.com/rules/axe/4.12/area-alt"
+    },
+    {
+      "key": "RD-91615",
+      "criterion": "4.1.3",
+      "title": "TC - [A11Y] - 4.1 Compatible - 4.1.3 Status Messages",
+      "status": "To Do",
+      "level": "AA",
+      "test_type": "Manual",
+      "labels": [
+        "A11Y",
+        "A11Y_MANUAL",
+        "A11Y_WEALTH",
+        "AA"
+      ],
+      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/4. Robust",
+      "description": "Guideline 4.1  Maximize compatibility with current and future user agents, including assistive technologies. Success Criteria:    4.1.3 Status Messages",
+      "steps": [
+        {
+          "action": "Trigger dynamic messages (confirmation, error, loading)",
+          "data": "",
+          "result": "Messages must be announced in screen readers using appropriate ARIA live regions"
+        },
+        {
+          "action": "Verify correct usage of role=alert, aria-live=polite/assertive",
+          "data": "",
+          "result": "Critical messages use assertive, informational use polite, without moving focus"
+        },
+        {
+          "action": "Test with screen reader that announcements interrupt or wait appropriately",
+          "data": "",
+          "result": "Live regions must be configured by message urgency without causing excessive interruptions"
+        }
+      ],
+      "automated_definition": null
+    }
+  ]
+}

@@ -1,0 +1,468 @@
+{
+  "1.1.1": {
+    "en": [
+      {
+        "action": "Verify functional images (buttons, links) with accessibility inspector",
+        "data": "",
+        "result": "Functional images must describe the action or destination, not just the visual image"
+      },
+      {
+        "action": "Review complex images (charts, diagrams) and look for extended descriptions",
+        "data": "",
+        "result": "Complex images must have accessible long description via longdesc, aria-describedby, or adjacent text"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar imágenes funcionales (botones, enlaces) con inspector de accesibilidad",
+        "data": "",
+        "result": "Imágenes funcionales deben describir la acción o destino, no solo la imagen visual"
+      },
+      {
+        "action": "Revisar imágenes complejas (gráficos, diagramas) y buscar descripciones extendidas",
+        "data": "",
+        "result": "Imágenes complejas deben tener descripción larga accesible mediante longdesc, aria-describedby o texto adyacente"
+      }
+    ]
+  },
+  "1.2.1": {
+    "en": [
+      {
+        "action": "Verify that transcript includes speaker identification and relevant sounds",
+        "data": "",
+        "result": "Transcript must be complete, identify who is speaking, and describe important sounds for comprehension"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar que transcripción incluya identificación de hablantes y sonidos relevantes",
+        "data": "",
+        "result": "Transcripción debe ser completa, identificar quién habla y describir sonidos importantes para comprensión"
+      }
+    ]
+  },
+  "1.2.2": {
+    "en": [
+      {
+        "action": "Verify caption synchronization and accuracy with audio",
+        "data": "",
+        "result": "Captions must appear synchronized with audio, without significant errors, covering relevant sound effects"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar sincronización y precisión de subtítulos con el audio",
+        "data": "",
+        "result": "Subtítulos deben aparecer sincronizados con el audio, sin errores significativos y cubrir efectos de sonido relevantes"
+      }
+    ]
+  },
+  "1.3.1": {
+    "en": [
+      {
+        "action": "Verify forms with programmatically associated labels",
+        "data": "",
+        "result": "Each input must have label with for attribute or be wrapped in label, visible to screen readers"
+      },
+      {
+        "action": "Review related field groups with fieldset and legend",
+        "data": "",
+        "result": "Control groups (radio buttons, checkboxes) must be grouped with fieldset and descriptive legend"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar formularios con labels asociados programáticamente",
+        "data": "",
+        "result": "Cada input debe tener label con atributo for o estar envuelto en label, visible para lectores de pantalla"
+      },
+      {
+        "action": "Revisar grupos de campos relacionados con fieldset y legend",
+        "data": "",
+        "result": "Grupos de controles (radio buttons, checkboxes) deben estar agrupados con fieldset y legend descriptivo"
+      }
+    ]
+  },
+  "1.3.4": {
+    "en": [
+      {
+        "action": "Verify that content is not locked to a single orientation",
+        "data": "",
+        "result": "Application must not force specific orientation unless essential (e.g., piano app, bank check)"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar que contenido no esté bloqueado en una sola orientación",
+        "data": "",
+        "result": "Aplicación no debe forzar orientación específica a menos que sea esencial (ej: app de piano, cheque bancario)"
+      }
+    ]
+  },
+  "1.4.1": {
+    "en": [
+      {
+        "action": "Test site in grayscale mode or with color blindness simulator",
+        "data": "",
+        "result": "All information must remain comprehensible without relying on color to distinguish elements"
+      }
+    ],
+    "es": [
+      {
+        "action": "Probar sitio en modo escala de grises o con simulador de daltonismo",
+        "data": "",
+        "result": "Toda información debe permanecer comprensible sin depender del color para distinguir elementos"
+      }
+    ]
+  },
+  "1.4.12": {
+    "en": [
+      {
+        "action": "Verify that buttons and controls do not break with modified spacing",
+        "data": "",
+        "result": "Interactive elements must maintain functionality and readability with custom spacing"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar que botones y controles no se rompan con espaciado modificado",
+        "data": "",
+        "result": "Elementos interactivos deben mantener su funcionalidad y legibilidad con espaciados personalizados"
+      }
+    ]
+  },
+  "1.4.2": {
+    "en": [
+      {
+        "action": "Verify that audio control is keyboard accessible",
+        "data": "",
+        "result": "Control must be operable without mouse, using Tab and Enter/Space"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar que control de audio sea accesible por teclado",
+        "data": "",
+        "result": "Control debe poder operarse sin mouse, usando Tab y Enter/Space"
+      }
+    ]
+  },
+  "1.4.3": {
+    "en": [
+      {
+        "action": "Verify contrast in all states (normal, hover, focus, disabled)",
+        "data": "",
+        "result": "All interactive element states must meet required contrast ratios"
+      },
+      {
+        "action": "Review text over images or gradient backgrounds",
+        "data": "",
+        "result": "Overlaid text must have sufficient contrast throughout or use shadows/overlays"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar contraste en todos los estados (normal, hover, focus, disabled)",
+        "data": "",
+        "result": "Todos los estados de elementos interactivos deben cumplir ratios de contraste requeridos"
+      },
+      {
+        "action": "Revisar texto sobre imágenes o fondos degradados",
+        "data": "",
+        "result": "Texto superpuesto debe tener contraste suficiente en toda su extensión o usar sombras/overlays"
+      }
+    ]
+  },
+  "1.4.4": {
+    "en": [
+      {
+        "action": "Verify that controls and buttons remain operable when zoomed",
+        "data": "",
+        "result": "Interactive elements must not be clipped or hidden when text size is increased"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar que controles y botones permanezcan operables al hacer zoom",
+        "data": "",
+        "result": "Elementos interactivos no deben quedar cortados u ocultos al aumentar tamaño de texto"
+      }
+    ]
+  },
+  "1.4.6": {
+    "en": [
+      {
+        "action": "Document exceptions and plan contrast improvements",
+        "data": "",
+        "result": "Identify areas not meeting AAA and prioritize changes in most critical elements"
+      }
+    ],
+    "es": [
+      {
+        "action": "Documentar excepciones y planificar mejoras de contraste",
+        "data": "",
+        "result": "Identificar áreas que no cumplen AAA y priorizar cambios en elementos más críticos"
+      }
+    ]
+  },
+  "2.1.1": {
+    "en": [
+      {
+        "action": "Test complex components (accordions, tabs, calendars)",
+        "data": "",
+        "result": "Custom widgets must respond to appropriate keys (arrows, Home, End, Escape)"
+      },
+      {
+        "action": "Verify all mouse actions have keyboard equivalent",
+        "data": "",
+        "result": "Drag and drop, hover menus, touch gestures must have keyboard-operable alternatives"
+      }
+    ],
+    "es": [
+      {
+        "action": "Probar componentes complejos (acordeones, pestañas, calendarios)",
+        "data": "",
+        "result": "Widgets personalizados deben responder a teclas apropiadas (flechas, Home, End, Escape)"
+      },
+      {
+        "action": "Verificar que todas las acciones de mouse tengan equivalente de teclado",
+        "data": "",
+        "result": "Drag and drop, hover menus, gestos táctiles deben tener alternativas operables por teclado"
+      }
+    ]
+  },
+  "2.1.3": {
+    "en": [
+      {
+        "action": "Document functions requiring specific pointer path",
+        "data": "",
+        "result": "If function requires specific path (signature, drawing), keyboard alternative or alternative method must exist"
+      }
+    ],
+    "es": [
+      {
+        "action": "Documentar funciones que requieren trayectoria específica del puntero",
+        "data": "",
+        "result": "Si función requiere path específico (firma, dibujo), debe existir alternativa de teclado o método alternativo"
+      }
+    ]
+  },
+  "2.2.1": {
+    "en": [
+      {
+        "action": "Verify prior warning before time expires",
+        "data": "",
+        "result": "System must alert with sufficient advance notice and allow simple extension (e.g., press button)"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar advertencia previa antes de que expire el tiempo",
+        "data": "",
+        "result": "Sistema debe alertar con suficiente anticipación y permitir extensión simple (ej: presionar botón)"
+      }
+    ]
+  },
+  "2.2.2": {
+    "en": [
+      {
+        "action": "Verify pause control is visible and keyboard operable",
+        "data": "",
+        "result": "Pause/play buttons must be clearly visible and accessible without mouse"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar que control de pausa sea visible y operable por teclado",
+        "data": "",
+        "result": "Botones de pausa/play deben estar claramente visibles y accesibles sin necesidad de mouse"
+      }
+    ]
+  },
+  "2.2.4": {
+    "en": [
+      {
+        "action": "Verify notification preferences settings",
+        "data": "",
+        "result": "System must offer controls to manage frequency and type of interruptions"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar configuración de preferencias de notificaciones",
+        "data": "",
+        "result": "Sistema debe ofrecer controles para gestionar frecuencia y tipo de interrupciones"
+      }
+    ]
+  },
+  "2.4.1": {
+    "en": [
+      {
+        "action": "Verify ARIA landmarks (main, nav, complementary, contentinfo)",
+        "data": "",
+        "result": "Structure must use landmark roles to enable quick navigation with screen readers"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar landmarks ARIA (main, nav, complementary, contentinfo)",
+        "data": "",
+        "result": "Estructura debe usar roles de landmark para permitir navegación rápida con lectores de pantalla"
+      }
+    ]
+  },
+  "2.4.2": {
+    "en": [
+      {
+        "action": "Verify title follows consistent format (content - section - site name)",
+        "data": "",
+        "result": "Titles must follow predictable pattern facilitating identification in tabs and history"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar que título siga formato consistente (contenido - sección - nombre sitio)",
+        "data": "",
+        "result": "Títulos deben seguir patrón predecible facilitando identificación en pestañas e historial"
+      }
+    ]
+  },
+  "2.4.4": {
+    "en": [
+      {
+        "action": "Use screen reader to list all links",
+        "data": "",
+        "result": "Links must be understandable when presented out of context in link list"
+      }
+    ],
+    "es": [
+      {
+        "action": "Usar lector de pantalla para listar todos los enlaces",
+        "data": "",
+        "result": "Enlaces deben ser comprensibles cuando se presentan fuera de contexto en lista de enlaces"
+      }
+    ]
+  },
+  "2.4.9": {
+    "en": [
+      {
+        "action": "Identify generic links ('more info', 'read more') and improve them",
+        "data": "",
+        "result": "Ambiguous links must include additional context via aria-label or aria-describedby"
+      }
+    ],
+    "es": [
+      {
+        "action": "Identificar enlaces genéricos ('más información', 'leer más') y mejorarlos",
+        "data": "",
+        "result": "Enlaces ambiguos deben incluir contexto adicional mediante aria-label o aria-describedby"
+      }
+    ]
+  },
+  "2.5.3": {
+    "en": [
+      {
+        "action": "Verify voice commands can activate controls using visible text",
+        "data": "",
+        "result": "Voice control users must be able to say visible text to activate element"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar que comandos de voz puedan activar controles usando texto visible",
+        "data": "",
+        "result": "Usuarios de control por voz deben poder decir texto visible para activar elemento"
+      }
+    ]
+  },
+  "3.1.1": {
+    "en": [
+      {
+        "action": "Verify correct pronunciation with screen reader",
+        "data": "",
+        "result": "Reader must use voice and pronunciation rules appropriate to declared language"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar con lector de pantalla que pronunciación sea correcta",
+        "data": "",
+        "result": "Lector debe usar voz y reglas de pronunciación apropiadas al idioma declarado"
+      }
+    ]
+  },
+  "3.1.2": {
+    "en": [
+      {
+        "action": "Test screen reader reading of quotes or terms in another language",
+        "data": "",
+        "result": "Language changes must be recognized and pronounced correctly"
+      }
+    ],
+    "es": [
+      {
+        "action": "Probar lectura con lector de pantalla de citas o términos en otro idioma",
+        "data": "",
+        "result": "Cambios de idioma deben ser reconocidos y pronunciados correctamente"
+      }
+    ]
+  },
+  "3.3.2": {
+    "en": [
+      {
+        "action": "Verify fields with specific formats (date, phone, zip code)",
+        "data": "",
+        "result": "Fields with format requirements must include examples or input masks"
+      }
+    ],
+    "es": [
+      {
+        "action": "Verificar campos con formatos específicos (fecha, teléfono, código postal)",
+        "data": "",
+        "result": "Campos con requisitos de formato deben incluir ejemplos o máscaras de entrada"
+      }
+    ]
+  },
+  "4.1.1": {
+    "en": [
+      {
+        "action": "Review dynamically generated code with browser inspector",
+        "data": "",
+        "result": "JavaScript generating content must produce valid and well-formed HTML"
+      }
+    ],
+    "es": [
+      {
+        "action": "Revisar código generado dinámicamente con inspector de navegador",
+        "data": "",
+        "result": "JavaScript que genera contenido debe producir HTML válido y bien formado"
+      }
+    ]
+  },
+  "4.1.2": {
+    "en": [
+      {
+        "action": "Test custom widgets with screen reader",
+        "data": "",
+        "result": "Components must announce correctly with appropriate ARIA role, state, and properties"
+      },
+      {
+        "action": "Verify state changes are reflected in ARIA attributes",
+        "data": "",
+        "result": "Dynamic states (expanded, selected, pressed) must be updated programmatically"
+      }
+    ],
+    "es": [
+      {
+        "action": "Probar widgets personalizados con lector de pantalla",
+        "data": "",
+        "result": "Componentes deben anunciarse correctamente con rol, estado y propiedades ARIA apropiadas"
+      },
+      {
+        "action": "Verificar que cambios de estado se reflejen en atributos ARIA",
+        "data": "",
+        "result": "Estados dinámicos (expandido, seleccionado, presionado) deben actualizarse programáticamente"
+      }
+    ]
+  }
+}

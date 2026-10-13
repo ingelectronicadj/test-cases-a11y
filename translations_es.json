@@ -1,0 +1,857 @@
+{
+  "Verify functional images (buttons, links) with accessibility inspector||Functional images must describe the action or destination, not just the visual image": {
+    "action": "Verificar imágenes funcionales (botones, enlaces) con inspector de accesibilidad",
+    "data": "",
+    "result": "Imágenes funcionales deben describir la acción o destino, no solo la imagen visual"
+  },
+  "Review complex images (charts, diagrams) and look for extended descriptions||Complex images must have accessible long description via longdesc, aria-describedby, or adjacent text": {
+    "action": "Revisar imágenes complejas (gráficos, diagramas) y buscar descripciones extendidas",
+    "data": "",
+    "result": "Imágenes complejas deben tener descripción larga accesible mediante longdesc, aria-describedby o texto adyacente"
+  },
+  "Verify that transcript includes speaker identification and relevant sounds||Transcript must be complete, identify who is speaking, and describe important sounds for comprehension": {
+    "action": "Verificar que transcripción incluya identificación de hablantes y sonidos relevantes",
+    "data": "",
+    "result": "Transcripción debe ser completa, identificar quién habla y describir sonidos importantes para comprensión"
+  },
+  "Verify caption synchronization and accuracy with audio||Captions must appear synchronized with audio, without significant errors, covering relevant sound effects": {
+    "action": "Verificar sincronización y precisión de subtítulos con el audio",
+    "data": "",
+    "result": "Subtítulos deben aparecer sincronizados con el audio, sin errores significativos y cubrir efectos de sonido relevantes"
+  },
+  "Verify that alternative covers all critical visual elements for comprehension||Description must include actions, expressions, scene changes, and unspoken on-screen text": {
+    "action": "Comprobar que alternativa cubra todos los elementos visuales críticos para comprensión",
+    "data": "",
+    "result": "Descripción debe incluir acciones, expresiones, cambios de escena y texto en pantalla no hablado"
+  },
+  "Verify accuracy and acceptable delay of live captions||Captions must reflect spoken audio with reasonable accuracy and minimal delay (maximum 3-5 seconds)": {
+    "action": "Verificar precisión y retraso aceptable de subtítulos en vivo",
+    "data": "",
+    "result": "Subtítulos deben reflejar audio hablado con precisión razonable y retraso mínimo (máximo 3-5 segundos)"
+  },
+  "Play video with audio description enabled and verify synchronization||Audio description must be inserted in natural pauses without overlapping main audio": {
+    "action": "Reproducir video con audiodescripción activada y verificar sincronización",
+    "data": "",
+    "result": "Audiodescripción debe insertarse en pausas naturales del diálogo sin solaparse con audio principal"
+  },
+  "Verify that audio description covers all critical visual elements||Essential visual information must be fully described for blind or low vision users": {
+    "action": "Verificar que la audiodescripción cubra todos los elementos visuales críticos",
+    "data": "",
+    "result": "Información visual esencial debe estar completamente descrita para usuarios ciegos o con baja visión"
+  },
+  "Verify visibility and size of sign language interpreter||Interpreter must be clearly visible, with adequate contrast and sufficient size to distinguish signs": {
+    "action": "Verificar visibilidad y tamaño del intérprete de señas",
+    "data": "",
+    "result": "Intérprete debe ser claramente visible, con contraste adecuado y tamaño suficiente para distinguir señas"
+  },
+  "Verify synchronization between audio and sign language||Sign interpretation must be synchronized with spoken audio without significant delays": {
+    "action": "Comprobar sincronización entre audio y lenguaje de señas",
+    "data": "",
+    "result": "Interpretación en señas debe estar sincronizada con el audio hablado sin retrasos significativos"
+  },
+  "Play video with extended audio description and verify pauses||Video must pause when needed to describe visual elements, then continue automatically": {
+    "action": "Reproducir video con audiodescripción extendida y verificar pausas",
+    "data": "",
+    "result": "Video debe pausarse cuando sea necesario describir elementos visuales, luego continuar automáticamente"
+  },
+  "Verify user control over extended audio description||User must be able to enable or disable extended audio description per preference": {
+    "action": "Verificar control del usuario sobre audiodescripción extendida",
+    "data": "",
+    "result": "Usuario debe poder activar o desactivar audiodescripción extendida según preferencia"
+  },
+  "Confirm that extended description does not interfere with content comprehension||Pauses and descriptions must integrate naturally without causing confusion or loss of narrative context": {
+    "action": "Confirmar que descripción extendida no interfiera con comprensión del contenido",
+    "data": "",
+    "result": "Pausas y descripciones deben integrarse naturalmente sin causar confusión o pérdida de contexto narrativo"
+  },
+  "Review that text alternative describes complete sequence of visual events||Document must function as independent alternative, describing all essential visual information chronologically": {
+    "action": "Revisar que alternativa textual describa secuencia completa de eventos visuales",
+    "data": "",
+    "result": "Documento debe funcionar como alternativa independiente, describiendo toda información visual esencial cronológicamente"
+  },
+  "Verify accessibility of text alternative||Transcript must be in accessible format (HTML, structured document) near the original video": {
+    "action": "Verificar accesibilidad de la alternativa textual",
+    "data": "",
+    "result": "Transcripción debe estar en formato accesible (HTML, documento estructurado) cerca del video original"
+  },
+  "Verify delivery method of synchronized alternative||Alternative can be real-time transcript, synchronized text description, or updated equivalent content": {
+    "action": "Verificar método de entrega de alternativa sincronizada",
+    "data": "",
+    "result": "Alternativa puede ser transcripción en tiempo real, descripción textual sincronizada o contenido equivalente actualizado"
+  },
+  "Verify that alternative captures essential information from live audio||Text content must reflect critical audio information with minimal acceptable delay": {
+    "action": "Comprobar que alternativa capture información esencial del audio en vivo",
+    "data": "",
+    "result": "Contenido textual debe reflejar información crítica del audio con mínimo retraso aceptable"
+  },
+  "Verify forms with programmatically associated labels||Each input must have label with for attribute or be wrapped in label, visible to screen readers": {
+    "action": "Verificar formularios con labels asociados programáticamente",
+    "data": "",
+    "result": "Cada input debe tener label con atributo for o estar envuelto en label, visible para lectores de pantalla"
+  },
+  "Review related field groups with fieldset and legend||Control groups (radio buttons, checkboxes) must be grouped with fieldset and descriptive legend": {
+    "action": "Revisar grupos de campos relacionados con fieldset y legend",
+    "data": "",
+    "result": "Grupos de controles (radio buttons, checkboxes) deben estar agrupados con fieldset y legend descriptivo"
+  },
+  "Use screen reader to verify content reading order||Reading order must be logical and coherent, without confusing jumps caused by CSS positioning": {
+    "action": "Usar lector de pantalla para verificar orden de lectura del contenido",
+    "data": "",
+    "result": "Orden de lectura debe ser lógico y coherente, sin saltos confusos causados por posicionamiento CSS"
+  },
+  "Verify that critical information does not rely solely on sensory elements||Errors, alerts, or process steps must be communicated with text in addition to color, icons, or sounds": {
+    "action": "Verificar que información crítica no dependa únicamente de elementos sensoriales",
+    "data": "",
+    "result": "Errores, alertas o pasos de proceso deben comunicarse con texto además de color, iconos o sonidos"
+  },
+  "Verify that content is not locked to a single orientation||Application must not force specific orientation unless essential (e.g., piano app, bank check)": {
+    "action": "Verificar que contenido no esté bloqueado en una sola orientación",
+    "data": "",
+    "result": "Aplicación no debe forzar orientación específica a menos que sea esencial (ej: app de piano, cheque bancario)"
+  },
+  "Test autocomplete with browser saved data||Fields with correct autocomplete must suggest user saved values when typing begins": {
+    "action": "Probar autocompletado con datos guardados en navegador",
+    "data": "",
+    "result": "Campos con autocomplete correcto deben sugerir valores guardados del usuario al comenzar a escribir"
+  },
+  "Verify icons and interactive elements with accessibility inspector||Buttons, links, and icons must expose their function through appropriate roles and accessible names": {
+    "action": "Verificar iconos y elementos interactivos con inspector de accesibilidad",
+    "data": "",
+    "result": "Botones, enlaces e iconos deben exponer su función mediante roles y nombres accesibles apropiados"
+  },
+  "Test site in grayscale mode or with color blindness simulator||All information must remain comprehensible without relying on color to distinguish elements": {
+    "action": "Probar sitio en modo escala de grises o con simulador de daltonismo",
+    "data": "",
+    "result": "Toda información debe permanecer comprensible sin depender del color para distinguir elementos"
+  },
+  "Verify that audio control is keyboard accessible||Control must be operable without mouse, using Tab and Enter/Space": {
+    "action": "Verificar que control de audio sea accesible por teclado",
+    "data": "",
+    "result": "Control debe poder operarse sin mouse, usando Tab y Enter/Space"
+  },
+  "Verify contrast in all states (normal, hover, focus, disabled)||All interactive element states must meet required contrast ratios": {
+    "action": "Verificar contraste en todos los estados (normal, hover, focus, disabled)",
+    "data": "",
+    "result": "Todos los estados de elementos interactivos deben cumplir ratios de contraste requeridos"
+  },
+  "Review text over images or gradient backgrounds||Overlaid text must have sufficient contrast throughout or use shadows/overlays": {
+    "action": "Revisar texto sobre imágenes o fondos degradados",
+    "data": "",
+    "result": "Texto superpuesto debe tener contraste suficiente en toda su extensión o usar sombras/overlays"
+  },
+  "Verify that controls and buttons remain operable when zoomed||Interactive elements must not be clipped or hidden when text size is increased": {
+    "action": "Verificar que controles y botones permanezcan operables al hacer zoom",
+    "data": "",
+    "result": "Elementos interactivos no deben quedar cortados u ocultos al aumentar tamaño de texto"
+  },
+  "Inspect graphics and banners for embedded text||Titles, labels, and informative text must be CSS-styled HTML text, not images": {
+    "action": "Inspeccionar gráficos y banners en busca de texto embebido",
+    "data": "",
+    "result": "Títulos, etiquetas y texto informativo deben ser texto HTML estilizado con CSS, no imágenes"
+  },
+  "Document exceptions and plan contrast improvements||Identify areas not meeting AAA and prioritize changes in most critical elements": {
+    "action": "Documentar excepciones y planificar mejoras de contraste",
+    "data": "",
+    "result": "Identificar áreas que no cumplen AAA y priorizar cambios en elementos más críticos"
+  },
+  "Verify control to disable background music if present||User must be able to mute or reduce ambient audio without affecting main narration": {
+    "action": "Verificar control para desactivar música de fondo si existe",
+    "data": "",
+    "result": "Usuario debe poder silenciar o reducir audio ambiental sin afectar narración principal"
+  },
+  "Test readability with OS settings (text size, high contrast)||Content must respect user preferences defined at system level": {
+    "action": "Probar legibilidad con configuraciones de sistema operativo (tamaño texto, contraste alto)",
+    "data": "",
+    "result": "Contenido debe respetar preferencias del usuario definidas a nivel de sistema"
+  },
+  "Inspect decorative elements and verify text is styled with CSS||Visual text effects must be achieved with CSS, not by converting text to images": {
+    "action": "Inspeccionar elementos decorativos y verificar que texto sea estilizado con CSS",
+    "data": "",
+    "result": "Efectos visuales en texto deben lograrse con CSS, no convirtiendo texto en imágenes"
+  },
+  "Test on real mobile device with narrow viewport||All content must adapt fluidly without clipping or need for bidirectional scrolling": {
+    "action": "Probar en dispositivo móvil real con viewport estrecho",
+    "data": "",
+    "result": "Todo el contenido debe adaptarse fluidamente sin recortes ni necesidad de scroll bidireccional"
+  },
+  "Verify contrast of informative graphic elements (charts, status icons)||Visual elements conveying information must be clearly distinguishable from background": {
+    "action": "Verificar contraste de elementos gráficos informativos (gráficas, iconos de estado)",
+    "data": "",
+    "result": "Elementos visuales que transmiten información deben distinguirse claramente del fondo"
+  },
+  "Verify that buttons and controls do not break with modified spacing||Interactive elements must maintain functionality and readability with custom spacing": {
+    "action": "Verificar que botones y controles no se rompan con espaciado modificado",
+    "data": "",
+    "result": "Elementos interactivos deben mantener su funcionalidad y legibilidad con espaciados personalizados"
+  },
+  "Verify that popup content does not disappear when moving pointer over it||User must be able to move cursor over tooltip to read or interact without it disappearing": {
+    "action": "Verificar que contenido emergente no desaparezca al mover puntero sobre él",
+    "data": "",
+    "result": "Usuario debe poder mover cursor sobre tooltip para leer o interactuar sin que desaparezca"
+  },
+  "Verify accessible dismiss mechanism (ESC or close button)||Popup content must be dismissible without moving pointer from the trigger that activated it": {
+    "action": "Comprobar mecanismo de cierre accesible (ESC o botón cerrar)",
+    "data": "",
+    "result": "Contenido emergente debe poder cerrarse sin mover puntero del trigger que lo activó"
+  },
+  "Test complex components (accordions, tabs, calendars)||Custom widgets must respond to appropriate keys (arrows, Home, End, Escape)": {
+    "action": "Probar componentes complejos (acordeones, pestañas, calendarios)",
+    "data": "",
+    "result": "Widgets personalizados deben responder a teclas apropiadas (flechas, Home, End, Escape)"
+  },
+  "Verify all mouse actions have keyboard equivalent||Drag and drop, hover menus, touch gestures must have keyboard-operable alternatives": {
+    "action": "Verificar que todas las acciones de mouse tengan equivalente de teclado",
+    "data": "",
+    "result": "Drag and drop, hover menus, gestos táctiles deben tener alternativas operables por teclado"
+  },
+  "Test modals, dialogs, and overlays with keyboard navigation||Focus must move freely within component and exit without being trapped": {
+    "action": "Probar modales, diálogos y overlays con navegación de teclado",
+    "data": "",
+    "result": "Foco debe poder moverse libremente dentro del componente y salir de él sin quedar atrapado"
+  },
+  "Document functions requiring specific pointer path||If function requires specific path (signature, drawing), keyboard alternative or alternative method must exist": {
+    "action": "Documentar funciones que requieren trayectoria específica del puntero",
+    "data": "",
+    "result": "Si función requiere path específico (firma, dibujo), debe existir alternativa de teclado o método alternativo"
+  },
+  "Verify shortcuts do not interfere with screen readers or assistive tools||Key combinations must avoid conflicts with assistive technology commands": {
+    "action": "Verificar que los atajos no interfieran con lectores de pantalla o herramientas de asistencia",
+    "data": "",
+    "result": "Las combinaciones de teclas deben evitar conflictos con los comandos de tecnologías de asistencia"
+  },
+  "Verify prior warning before time expires||System must alert with sufficient advance notice and allow simple extension (e.g., press button)": {
+    "action": "Verificar advertencia previa antes de que expire el tiempo",
+    "data": "",
+    "result": "Sistema debe alertar con suficiente anticipación y permitir extensión simple (ej: presionar botón)"
+  },
+  "Verify pause control is visible and keyboard operable||Pause/play buttons must be clearly visible and accessible without mouse": {
+    "action": "Verificar que control de pausa sea visible y operable por teclado",
+    "data": "",
+    "result": "Botones de pausa/play deben estar claramente visibles y accesibles sin necesidad de mouse"
+  },
+  "Document exceptions where time is a real-time requirement||Identify live events or auctions where time limit is essential and cannot be removed": {
+    "action": "Documentar excepciones donde tiempo sea requisito real-time",
+    "data": "",
+    "result": "Identificar eventos en vivo o subastas donde límite de tiempo sea esencial y no pueda eliminarse"
+  },
+  "Verify notification preferences settings||System must offer controls to manage frequency and type of interruptions": {
+    "action": "Verificar configuración de preferencias de notificaciones",
+    "data": "",
+    "result": "Sistema debe ofrecer controles para gestionar frecuencia y tipo de interrupciones"
+  },
+  "Test with long forms and verify data recovery||In-progress information must be auto-saved or recoverable after relogin": {
+    "action": "Probar con formularios largos y verificar la recuperación de datos",
+    "data": "",
+    "result": "La información en progreso debe guardarse automáticamente o ser recuperable tras volver a iniciar sesión"
+  },
+  "Verify user can save work before timeout||Warning must include clear option to save progress or extend session": {
+    "action": "Verificar que usuario pueda guardar trabajo antes de timeout",
+    "data": "",
+    "result": "Aviso debe incluir opción clara para guardar progreso o extender sesión"
+  },
+  "Use PEAT (Photosensitive Epilepsy Analysis Tool) if available||Analyze multimedia content to identify flashes that could cause seizures": {
+    "action": "Usar herramienta PEAT (Photosensitive Epilepsy Analysis Tool) si disponible",
+    "data": "",
+    "result": "Analizar contenido multimedia para identificar destellos que puedan causar convulsiones"
+  },
+  "Review embedded third-party content (ads, external videos)||External content must not contain dangerous flashes or must be disableable": {
+    "action": "Revisar contenido de terceros embebido (ads, videos externos)",
+    "data": "",
+    "result": "Contenido externo no debe contener destellos peligrosos o debe poder desactivarse"
+  },
+  "Verify respect for system prefers-reduced-motion preference||Site must detect and respect OS setting to reduce motion": {
+    "action": "Comprobar respeto a preferencia prefers-reduced-motion del sistema",
+    "data": "",
+    "result": "Sitio debe detectar y respetar configuración de sistema operativo para reducir movimiento"
+  },
+  "Verify ARIA landmarks (main, nav, complementary, contentinfo)||Structure must use landmark roles to enable quick navigation with screen readers": {
+    "action": "Verificar landmarks ARIA (main, nav, complementary, contentinfo)",
+    "data": "",
+    "result": "Estructura debe usar roles de landmark para permitir navegación rápida con lectores de pantalla"
+  },
+  "Verify title follows consistent format (content - section - site name)||Titles must follow predictable pattern facilitating identification in tabs and history": {
+    "action": "Verificar que título siga formato consistente (contenido - sección - nombre sitio)",
+    "data": "",
+    "result": "Títulos deben seguir patrón predecible facilitando identificación en pestañas e historial"
+  },
+  "Identify elements with positive tabindex and evaluate necessity||Avoid tabindex greater than 0, order must be controlled through logical DOM structure": {
+    "action": "Identificar elementos con tabindex positivo y evaluar necesidad",
+    "data": "",
+    "result": "Evitar tabindex mayor a 0, orden debe controlarse mediante estructura DOM lógica"
+  },
+  "Use screen reader to list all links||Links must be understandable when presented out of context in link list": {
+    "action": "Usar lector de pantalla para listar todos los enlaces",
+    "data": "",
+    "result": "Enlaces deben ser comprensibles cuando se presentan fuera de contexto en lista de enlaces"
+  },
+  "Verify at least two navigation methods are available||User must be able to choose between different strategies to locate content": {
+    "action": "Verificar que al menos dos métodos de navegación estén disponibles",
+    "data": "",
+    "result": "Usuario debe poder elegir entre diferentes estrategias para localizar contenido"
+  },
+  "Use screen reader to navigate by headings||Heading structure must allow quick understanding of content organization": {
+    "action": "Usar lector de pantalla para navegar por encabezados",
+    "data": "",
+    "result": "La estructura de encabezados debe permitir comprender rápidamente la organización del contenido"
+  },
+  "Verify outline is not disabled without visual replacement||If default outline is removed, equally visible alternative indicator must exist": {
+    "action": "Verificar que outline no esté desactivado sin reemplazo visual",
+    "data": "",
+    "result": "Si se elimina outline predeterminado, debe existir indicador alternativo igualmente visible"
+  },
+  "Review that breadcrumbs are accessible and reflect correct hierarchy||Breadcrumbs must be keyboard navigable and structured with ordered list": {
+    "action": "Revisar que breadcrumbs sean accesibles y reflejen jerarquía correcta",
+    "data": "",
+    "result": "Migas de pan deben ser navegables por teclado y estructuradas con lista ordenada"
+  },
+  "Identify generic links ('more info', 'read more') and improve them||Ambiguous links must include additional context via aria-label or aria-describedby": {
+    "action": "Identificar enlaces genéricos ('más información', 'leer más') y mejorarlos",
+    "data": "",
+    "result": "Enlaces ambiguos deben incluir contexto adicional mediante aria-label o aria-describedby"
+  },
+  "Verify no long text blocks exist without intermediate headings||Extensive content must be subdivided with headings facilitating scanning and navigation": {
+    "action": "Verificar que no existan bloques de texto largos sin encabezados intermedios",
+    "data": "",
+    "result": "Contenido extenso debe subdividirse con encabezados que faciliten escaneo y navegación"
+  },
+  "Test navigation in areas with sticky headers or floating elements||Sticky bars must not completely cover the focused element": {
+    "action": "Probar navegación en áreas con headers fijos o elementos flotantes",
+    "data": "",
+    "result": "Barras pegajosas no deben cubrir completamente el elemento enfocado"
+  },
+  "Implement auto-scroll when element receives focus outside viewport||Content must auto-adjust to fully show the focused element": {
+    "action": "Implementar scroll automático cuando elemento recibe foco fuera de viewport",
+    "data": "",
+    "result": "Contenido debe ajustarse automáticamente para mostrar completamente el elemento enfocado"
+  },
+  "Calculate that indicator has minimum 2 CSS pixels perimeter or equivalent area||Indicator thickness and area must meet specific WCAG 2.2 requirements": {
+    "action": "Calcular que indicador tenga perímetro mínimo de 2 píxeles CSS o área equivalente",
+    "data": "",
+    "result": "Grosor y área del indicador deben cumplir requisitos específicos de WCAG 2.2"
+  },
+  "Verify carousels, maps, and swipeable components||Alternative buttons or controls must exist for users with motor limitations": {
+    "action": "Verificar carruseles, mapas y componentes deslizables",
+    "data": "",
+    "result": "Debe existir botones o controles alternativos para usuarios con limitaciones motoras"
+  },
+  "Verify accidental clicks can be cancelled by dragging outside||User must be able to undo accidental activation by moving pointer before release": {
+    "action": "Verificar que clics accidentales puedan cancelarse arrastrando fuera",
+    "data": "",
+    "result": "Usuario debe poder deshacer activación accidental moviendo puntero antes de soltar"
+  },
+  "Verify voice commands can activate controls using visible text||Voice control users must be able to say visible text to activate element": {
+    "action": "Verificar que comandos de voz puedan activar controles usando texto visible",
+    "data": "",
+    "result": "Usuarios de control por voz deben poder decir texto visible para activar elemento"
+  },
+  "Verify setting to disable motion actuation||User must be able to disable motion responses to avoid accidental activations": {
+    "action": "Verificar configuración para desactivar actuación por movimiento",
+    "data": "",
+    "result": "Usuario debe poder deshabilitar respuestas a movimiento para evitar activaciones accidentales"
+  },
+  "Verify switching input method does not cause loss of functionality||User must be able to freely switch between keyboard, mouse, and touch without issues": {
+    "action": "Verificar que cambiar de método de entrada no cause pérdida de funcionalidad",
+    "data": "",
+    "result": "Usuario debe poder alternar libremente entre teclado, mouse y touch sin problemas"
+  },
+  "Test keyboard alternatives for reordering elements||Reorderable lists must be manipulable with keyboard (arrows + Space/Enter)": {
+    "action": "Probar alternativas de teclado para reordenar elementos",
+    "data": "",
+    "result": "Listas reordenables deben poder manipularse con teclado (flechas + Space/Enter)"
+  },
+  "Verify spacing between adjacent touch targets||If targets are smaller than 24px, sufficient surrounding space must exist to avoid errors": {
+    "action": "Verificar espaciado entre objetivos táctiles adyacentes",
+    "data": "",
+    "result": "Si objetivos son menores a 24px, debe existir espacio suficiente alrededor para evitar errores"
+  },
+  "Verify correct pronunciation with screen reader||Reader must use voice and pronunciation rules appropriate to declared language": {
+    "action": "Verificar con lector de pantalla que pronunciación sea correcta",
+    "data": "",
+    "result": "Lector debe usar voz y reglas de pronunciación apropiadas al idioma declarado"
+  },
+  "Test screen reader reading of quotes or terms in another language||Language changes must be recognized and pronounced correctly": {
+    "action": "Probar lectura con lector de pantalla de citas o términos en otro idioma",
+    "data": "",
+    "result": "Cambios de idioma deben ser reconocidos y pronunciados correctamente"
+  },
+  "Verify accessibility of definitions through links or dfn/abbr elements||Specialized terms must link to accessible explanations": {
+    "action": "Verificar accesibilidad de definiciones mediante enlaces o elementos dfn/abbr",
+    "data": "",
+    "result": "Términos especializados deben vincularse a explicaciones accesibles"
+  },
+  "Implement abbr element with title attribute where appropriate||Abbreviations must be semantically marked for assistive technologies": {
+    "action": "Implementar elemento abbr con atributo title donde sea apropiado",
+    "data": "",
+    "result": "Abreviaturas deben marcarse semánticamente para tecnologías asistivas"
+  },
+  "Use readability analysis tools (Flesch-Kincaid, INFLESZ)||Measure readability indices and provide alternatives for technical or complex content": {
+    "action": "Usar herramientas de análisis de legibilidad (Flesch-Kincaid, INFLESZ)",
+    "data": "",
+    "result": "Medir índices de legibilidad y proporcionar alternativas para contenido técnico o complejo"
+  },
+  "Verify homographs and ambiguous terms with pronunciation guides||Words with multiple pronunciations must be clarified when context is insufficient": {
+    "action": "Verificar homógrafos y términos ambiguos con guías de pronunciación",
+    "data": "",
+    "result": "Palabras con múltiples pronunciaciones deben clarificarse cuando el contexto no sea suficiente"
+  },
+  "Verify form fields do not submit when focused||Focus must be independent of activation, changes must only occur with explicit action": {
+    "action": "Verificar que campos de formulario no envíen al enfocarse",
+    "data": "",
+    "result": "Foco debe ser independiente de activación, cambios solo deben ocurrir con acción explícita"
+  },
+  "Test selects and radios that may cause automatic navigation||If change causes action, prior warning or confirmation button must be required": {
+    "action": "Probar selects y radios que puedan causar navegación automática",
+    "data": "",
+    "result": "Si cambio causa acción, debe advertirse previamente o requerir botón de confirmación"
+  },
+  "Document location of global elements (search, login, main menu)||Common components must maintain consistent position and order throughout site": {
+    "action": "Documentar ubicación de elementos globales (buscar, login, menú principal)",
+    "data": "",
+    "result": "Componentes comunes deben mantener posición y orden consistente en todo el sitio"
+  },
+  "Verify consistency of icons and symbols throughout site||Same icon must represent same function, avoid different symbols for identical actions": {
+    "action": "Verificar consistencia de iconos y símbolos a través del sitio",
+    "data": "",
+    "result": "Mismo icono debe representar misma función, evitar símbolos diferentes para acciones idénticas"
+  },
+  "Identify and fix automatic submissions or unexpected redirects||User must initiate all important changes through clear buttons or links": {
+    "action": "Identificar y corregir envíos automáticos o redirecciones inesperadas",
+    "data": "",
+    "result": "Usuario debe iniciar todos los cambios importantes mediante botones o enlaces claros"
+  },
+  "Verify quick access to contact, FAQ, chat, or documentation||Help must be available predictably in fixed location": {
+    "action": "Verificar acceso rápido a contacto, FAQ, chat o documentación",
+    "data": "",
+    "result": "Ayuda debe estar disponible de forma predecible en ubicación fija"
+  },
+  "Verify error messages use aria-describedby or aria-invalid||Errors must be programmatically associated with affected fields for assistive technologies": {
+    "action": "Verificar que mensajes de error usen aria-describedby o aria-invalid",
+    "data": "",
+    "result": "Errores deben asociarse programáticamente con campos afectados para tecnologías asistivas"
+  },
+  "Verify focus moves to first error or error summary||After validation, user must be clearly directed to found problems": {
+    "action": "Comprobar que foco se mueva a primer error o resumen de errores",
+    "data": "",
+    "result": "Tras validación, usuario debe ser dirigido claramente a los problemas encontrados"
+  },
+  "Verify fields with specific formats (date, phone, zip code)||Fields with format requirements must include examples or input masks": {
+    "action": "Verificar campos con formatos específicos (fecha, teléfono, código postal)",
+    "data": "",
+    "result": "Campos con requisitos de formato deben incluir ejemplos o máscaras de entrada"
+  },
+  "Evaluate message quality: must be specific and solution-oriented||Errors must explain what is wrong and how to fix it, not just indicate there is an error": {
+    "action": "Evaluar calidad de mensajes: deben ser específicos y orientados a solución",
+    "data": "",
+    "result": "Errores deben explicar qué está mal y cómo corregirlo, no solo indicar que hay error"
+  },
+  "Verify confirmation page with option to edit before final submission||Critical data must be shown in summary with ability to go back and modify": {
+    "action": "Verificar página de confirmación con opción de editar antes de envío definitivo",
+    "data": "",
+    "result": "Datos críticos deben mostrarse en resumen con posibilidad de volver y modificar"
+  },
+  "Verify tooltips, help links, or info icons next to complex fields||Help must be available in context where needed, not only on separate page": {
+    "action": "Verificar tooltips, enlaces de ayuda o iconos de información junto a campos complejos",
+    "data": "",
+    "result": "Ayuda debe estar disponible en contexto donde se necesita, no solo en página separada"
+  },
+  "Test form submission with critical information||System must present review screen where user can verify and correct before confirming": {
+    "action": "Probar envío de formularios con información crítica",
+    "data": "",
+    "result": "Sistema debe presentar pantalla de revisión donde usuario pueda verificar y corregir antes de confirmar"
+  },
+  "Verify availability of option to revert completed actions||Destructive actions must allow undo or have grace period before permanent execution": {
+    "action": "Verificar disponibilidad de opción para revertir acciones completadas",
+    "data": "",
+    "result": "Acciones destructivas deben permitir deshacer o tener período de gracia antes de ejecutarse permanentemente"
+  },
+  "Verify explicit confirmations for irreversible actions||Deletions, transfers, or permanent changes must require clear and specific additional confirmation": {
+    "action": "Comprobar confirmaciones explícitas para acciones irreversibles",
+    "data": "",
+    "result": "Eliminaciones, transferencias o cambios permanentes deben requerir confirmación adicional clara y específica"
+  },
+  "Verify data from previous steps is pre-filled in later steps||User must not re-type name, address, or other already entered data": {
+    "action": "Verificar que datos de pasos anteriores se pre-rellenen en pasos posteriores",
+    "data": "",
+    "result": "Usuario no debe reescribir nombre, dirección u otros datos ya ingresados"
+  },
+  "Verify availability of magic link or OTP code authentication||Alternative methods must be equally secure without requiring visual recognition": {
+    "action": "Verificar disponibilidad de autenticación por enlace mágico o código OTP",
+    "data": "",
+    "result": "Métodos alternativos deben ser igualmente seguros sin requerir reconocimiento visual"
+  },
+  "Document and promote use of biometric authentication or password managers||Authentication options must include AAA methods not requiring complex memory": {
+    "action": "Documentar y promover uso de autenticación biométrica o gestores de contraseñas",
+    "data": "",
+    "result": "Opciones de autenticación deben incluir métodos AAA que no requieran memoria compleja"
+  },
+  "Review dynamically generated code with browser inspector||JavaScript generating content must produce valid and well-formed HTML": {
+    "action": "Revisar código generado dinámicamente con inspector de navegador",
+    "data": "",
+    "result": "JavaScript que genera contenido debe producir HTML válido y bien formado"
+  },
+  "Test custom widgets with screen reader||Components must announce correctly with appropriate ARIA role, state, and properties": {
+    "action": "Probar widgets personalizados con lector de pantalla",
+    "data": "",
+    "result": "Componentes deben anunciarse correctamente con rol, estado y propiedades ARIA apropiadas"
+  },
+  "Verify state changes are reflected in ARIA attributes||Dynamic states (expanded, selected, pressed) must be updated programmatically": {
+    "action": "Verificar que cambios de estado se reflejen en atributos ARIA",
+    "data": "",
+    "result": "Estados dinámicos (expandido, seleccionado, presionado) deben actualizarse programáticamente"
+  },
+  "Verify correct usage of role=alert, aria-live=polite/assertive||Critical messages use assertive, informational use polite, without moving focus": {
+    "action": "Verificar uso correcto de role=alert, aria-live=polite/assertive",
+    "data": "",
+    "result": "Mensajes críticos usan assertive, informaciones usan polite, sin mover foco"
+  },
+  "Test with screen reader that announcements interrupt or wait appropriately||Live regions must be configured by message urgency without causing excessive interruptions": {
+    "action": "Probar con lector de pantalla que anuncios interrumpan o esperen apropiadamente",
+    "data": "",
+    "result": "Live regions deben configurarse según urgencia del mensaje sin causar interrupciones excesivas"
+  },
+  "Play videos with essential visual content and verify descriptions||Audio description or text alternative must exist describing important visual information": {
+    "action": "Reproducir videos con contenido visual esencial y verificar las descripciones",
+    "data": "",
+    "result": "Debe existir una audiodescripción o alternativa de texto que describa la información visual importante"
+  },
+  "Access live broadcasts if available||Live broadcasts must have real-time captioning": {
+    "action": "Acceder a emisiones en directo si están disponibles",
+    "data": "",
+    "result": "Las emisiones en directo deben tener subtítulos en tiempo real"
+  },
+  "Identify prerecorded videos containing essential visual information not conveyed in audio||Videos must include audio description covering actions, characters, scene changes, and relevant visual elements": {
+    "action": "Identificar videos pregrabados que contengan información visual esencial no transmitida por el audio",
+    "data": "",
+    "result": "Los videos deben incluir audiodescripción que cubra acciones, personajes, cambios de escena y elementos visuales relevantes"
+  },
+  "Identify prerecorded audio content (videos with narration or dialogue)||Videos must include sign language interpretation visible on screen or activatable": {
+    "action": "Identificar contenido de video pregrabado con narración o diálogo",
+    "data": "",
+    "result": "Los videos deben incluir interpretación en lengua de signos visible en pantalla o activable"
+  },
+  "Identify videos where natural pauses are insufficient for audio description||Video must automatically pause to allow extended audio description of complex visual information": {
+    "action": "Identificar videos donde las pausas naturales son insuficientes para la audiodescripción",
+    "data": "",
+    "result": "El video debe pausarse automáticamente para permitir una audiodescripción extendida de la información visual compleja"
+  },
+  "Locate prerecorded videos and verify availability of complete text document||A complete text transcript must exist including dialogues, visual descriptions, and relevant sounds": {
+    "action": "Localizar videos pregrabados y verificar la disponibilidad de un documento de texto completo",
+    "data": "",
+    "result": "Debe existir una transcripción de texto completa que incluya diálogos, descripciones visuales y sonidos relevantes"
+  },
+  "Access live audio-only broadcast (podcast, web radio, conference)||An equivalent alternative must be presented synchronized with the live audio": {
+    "action": "Acceder a una emisión en directo solo de audio (podcast, radio web, conferencia)",
+    "data": "",
+    "result": "Debe presentarse una alternativa equivalente sincronizada con el audio en directo"
+  },
+  "Navigate the site using only Tab and verify reading order||Tab and DOM order must match the logical visual order of content": {
+    "action": "Navegar el sitio usando solo Tab y verificar el orden de lectura",
+    "data": "",
+    "result": "El orden de Tab y del DOM debe coincidir con el orden visual lógico del contenido"
+  },
+  "Identify instructions that use only shape, color, or position||Instructions must include descriptive text in addition to visual references (e.g., 'green Submit button' not just 'green button')": {
+    "action": "Identificar instrucciones que usan solo forma, color o posición",
+    "data": "",
+    "result": "Las instrucciones deben incluir texto descriptivo además de referencias visuales (p. ej., 'botón verde Enviar' y no solo 'botón verde')"
+  },
+  "Inspect form fields in source code||Common fields (name, email, phone) must have appropriate autocomplete attribute": {
+    "action": "Inspeccionar los campos de formulario en el código fuente",
+    "data": "",
+    "result": "Los campos comunes (nombre, email, teléfono) deben tener el atributo autocomplete apropiado"
+  },
+  "Review complex UI components and verify programmatic purpose||Components must identify their purpose through ARIA attributes or HTML semantics for assistive technologies": {
+    "action": "Revisar componentes UI complejos y verificar su propósito programático",
+    "data": "",
+    "result": "Los componentes deben identificar su propósito mediante atributos ARIA o semántica HTML para las tecnologías de asistencia"
+  },
+  "Identify text rendered as image||Text must be in real HTML, not images (except logos or special cases)": {
+    "action": "Identificar texto renderizado como imagen",
+    "data": "",
+    "result": "El texto debe estar en HTML real, no en imágenes (excepto logotipos o casos especiales)"
+  },
+  "Play audio content and evaluate background sound presence||Background audio must be removable, 20dB lower than main audio, or non-existent": {
+    "action": "Reproducir contenido de audio y evaluar la presencia de sonido de fondo",
+    "data": "",
+    "result": "El audio de fondo debe poder desactivarse, estar 20dB por debajo del audio principal o no existir"
+  },
+  "Verify if user can customize spacing, column width, alignment, and fonts||System must allow visual presentation adjustments without loss of functionality or content": {
+    "action": "Verificar si el usuario puede personalizar espaciado, ancho de columna, alineación y fuentes",
+    "data": "",
+    "result": "El sistema debe permitir ajustes de presentación visual sin pérdida de funcionalidad o contenido"
+  },
+  "Thoroughly review entire site for text rendered as images||No text in image format must exist, all must be real HTML text (no exceptions except logos)": {
+    "action": "Revisar a fondo todo el sitio en busca de texto renderizado como imagen",
+    "data": "",
+    "result": "No debe existir texto en formato imagen, todo debe ser texto HTML real (sin excepciones salvo logotipos)"
+  },
+  "Resize window to 320px width or zoom to 400%||Horizontal scrolling must not be required to read content (except complex tables)": {
+    "action": "Redimensionar la ventana a 320px de ancho o ampliar al 400%",
+    "data": "",
+    "result": "No debe requerirse desplazamiento horizontal para leer el contenido (excepto tablas complejas)"
+  },
+  "Measure contrast of UI components and focus states||Minimum 3:1 contrast for component borders, functional icons, and focus indicators": {
+    "action": "Medir el contraste de componentes UI y estados de foco",
+    "data": "",
+    "result": "Contraste mínimo 3:1 para bordes de componentes, iconos funcionales e indicadores de foco"
+  },
+  "Activate tooltips and popup content with hover and keyboard||Additional content must be keyboard accessible, remain visible, and be dismissible without moving pointer": {
+    "action": "Activar tooltips y contenido emergente con hover y teclado",
+    "data": "",
+    "result": "El contenido adicional debe ser accesible por teclado, permanecer visible y poder descartarse sin mover el puntero"
+  },
+  "Navigate the entire page/component using only Tab and Shift+Tab||Focus must move through all interactive elements and exit freely without being trapped": {
+    "action": "Navegar toda la página/componente usando solo Tab y Shift+Tab",
+    "data": "",
+    "result": "El foco debe recorrer todos los elementos interactivos y salir libremente sin quedar atrapado"
+  },
+  "Test modals, dialogs, and overlays with keyboard navigation||Focus must move freely within the component and it must be closable via Esc or a keyboard-accessible close control": {
+    "action": "Probar modales, diálogos y overlays con navegación por teclado",
+    "data": "",
+    "result": "El foco debe moverse libremente dentro del componente y este debe poder cerrarse con Esc o con un control de cierre accesible por teclado"
+  },
+  "If content requires non-standard keys to exit focus, verify users are informed||Instructions for un-trapping focus must be visibly provided": {
+    "action": "Si el contenido requiere teclas no estándar para salir del foco, verificar que se informe a los usuarios",
+    "data": "",
+    "result": "Deben proporcionarse visiblemente instrucciones para liberar el foco"
+  },
+  "Identify single-key shortcuts (letter, number, or punctuation) implemented in the interface||Each shortcut must be disableable, remappable, or active only while its component has focus": {
+    "action": "Identificar atajos de tecla única (letra, número o signo de puntuación) implementados en la interfaz",
+    "data": "",
+    "result": "Cada atajo debe poder desactivarse, reasignarse o estar activo solo mientras su componente tiene el foco"
+  },
+  "Verify that all functionality and content can be used without any time limits||Tasks must be completable without time restrictions or interruptions": {
+    "action": "Verificar que toda la funcionalidad y el contenido puedan usarse sin límites de tiempo",
+    "data": "",
+    "result": "Las tareas deben poder completarse sin restricciones ni interrupciones de tiempo"
+  },
+  "Document exceptions where time is a real-time requirement||Only live essential events (e.g. real-time auctions) may be exempt; all others must have no timing": {
+    "action": "Documentar las excepciones donde el tiempo es un requisito en tiempo real",
+    "data": "",
+    "result": "Solo eventos esenciales en directo (p. ej. subastas en tiempo real) pueden estar exentos; los demás no deben tener límite de tiempo"
+  },
+  "Let the session expire mid-task and log in again||After re-authenticating, the user must continue the activity without losing previously entered data": {
+    "action": "Dejar expirar la sesión a mitad de tarea e iniciar sesión de nuevo",
+    "data": "",
+    "result": "Tras reautenticarse, el usuario debe poder continuar la actividad sin perder los datos introducidos previamente"
+  },
+  "Verify users are warned about session inactivity timeout||A warning must be presented in time for the user to react (at least 20 seconds) via an accessible notification": {
+    "action": "Verificar que se advierta a los usuarios del cierre de sesión por inactividad",
+    "data": "",
+    "result": "Debe presentarse una advertencia con tiempo suficiente para reaccionar (al menos 20 segundos) mediante una notificación accesible"
+  },
+  "Verify user can save work before timeout||Warning must include a clear option to save progress or extend the session": {
+    "action": "Verificar que el usuario pueda guardar su trabajo antes del cierre de sesión",
+    "data": "",
+    "result": "La advertencia debe incluir una opción clara para guardar el progreso o extender la sesión"
+  },
+  "Review site animations and transitions||No content should flash more than 3 times per second": {
+    "action": "Revisar las animaciones y transiciones del sitio",
+    "data": "",
+    "result": "Ningún contenido debe parpadear más de 3 veces por segundo"
+  },
+  "Thoroughly analyze animations, videos, and dynamic content||No flash exceeding safe limits must exist, without exceptions": {
+    "action": "Analizar a fondo animaciones, videos y contenido dinámico",
+    "data": "",
+    "result": "No debe existir ningún destello que supere los límites seguros, sin excepciones"
+  },
+  "Verify motion animations triggered by scroll or interaction||User must be able to disable non-essential motion animations": {
+    "action": "Verificar animaciones de movimiento activadas por scroll o interacción",
+    "data": "",
+    "result": "El usuario debe poder desactivar las animaciones de movimiento no esenciales"
+  },
+  "Navigate with Tab in order and verify visual logic||Focus order must follow logical sequence left to right, top to bottom": {
+    "action": "Navegar con Tab en orden y verificar la lógica visual",
+    "data": "",
+    "result": "El orden del foco debe seguir una secuencia lógica de izquierda a derecha y de arriba abajo"
+  },
+  "Try to locate an internal page in different ways||Navigation menu, internal search, sitemap, or breadcrumbs must exist": {
+    "action": "Intentar localizar una página interna de distintas formas",
+    "data": "",
+    "result": "Debe existir un menú de navegación, búsqueda interna, mapa del sitio o breadcrumbs"
+  },
+  "Verify page headings are descriptive and reflect the content structure||Each heading must clearly describe the topic or purpose of its section": {
+    "action": "Verificar que los encabezados de página sean descriptivos y reflejen la estructura del contenido",
+    "data": "",
+    "result": "Cada encabezado debe describir claramente el tema o propósito de su sección"
+  },
+  "Check labels of form fields and interactive controls||All labels must be descriptive and clearly identify the control purpose": {
+    "action": "Revisar las etiquetas de campos de formulario y controles interactivos",
+    "data": "",
+    "result": "Todas las etiquetas deben ser descriptivas e identificar claramente el propósito del control"
+  },
+  "Navigate with Tab and observe focus indicator||Interactive elements must show clear contrasted visual indicator when focused": {
+    "action": "Navegar con Tab y observar el indicador de foco",
+    "data": "",
+    "result": "Los elementos interactivos deben mostrar un indicador visual claro y contrastado al recibir el foco"
+  },
+  "Navigate through different site sections and verify location indicators||Breadcrumbs, section titles, or indicators showing user location must exist": {
+    "action": "Navegar por distintas secciones del sitio y verificar los indicadores de ubicación",
+    "data": "",
+    "result": "Deben existir breadcrumbs, títulos de sección o indicadores que muestren la ubicación del usuario"
+  },
+  "Review content structure and heading usage||Content must be organized with descriptive headings dividing information into logical sections": {
+    "action": "Revisar la estructura del contenido y el uso de encabezados",
+    "data": "",
+    "result": "El contenido debe estar organizado con encabezados descriptivos que dividan la información en secciones lógicas"
+  },
+  "Navigate with keyboard and verify focus visibility on elements near edges||At least part of focus indicator must remain visible, not completely hidden by other elements": {
+    "action": "Navegar con teclado y verificar la visibilidad del foco en elementos cerca de los bordes",
+    "data": "",
+    "result": "Al menos parte del indicador de foco debe permanecer visible, no completamente oculto por otros elementos"
+  },
+  "Verify focus is completely visible in all situations||Focus indicator must be completely visible without any obstruction by other elements": {
+    "action": "Verificar que el foco sea completamente visible en todas las situaciones",
+    "data": "",
+    "result": "El indicador de foco debe ser completamente visible sin ninguna obstrucción por otros elementos"
+  },
+  "Measure focus indicator area and contrast with specialized tools||Indicator must have sufficient minimum area and high contrast for maximum visibility": {
+    "action": "Medir el área y el contraste del indicador de foco con herramientas especializadas",
+    "data": "",
+    "result": "El indicador debe tener un área mínima suficiente y un contraste alto para máxima visibilidad"
+  },
+  "Identify functions activated by complex gestures (swipe, pinch)||Functions must have alternative with simple single-point gestures (tap, click)": {
+    "action": "Identificar funciones activadas por gestos complejos (deslizar, pellizcar)",
+    "data": "",
+    "result": "Las funciones deben tener una alternativa con gestos simples de un solo punto (toque, clic)"
+  },
+  "Test activation of interactive elements||Function must not execute on mousedown/touchstart, must allow cancellation by releasing outside target": {
+    "action": "Probar la activación de elementos interactivos",
+    "data": "",
+    "result": "La función no debe ejecutarse en mousedown/touchstart, debe permitir cancelar soltando fuera del objetivo"
+  },
+  "Identify functions using accelerometer or gyroscope||Functions activated by device motion must have standard UI alternative": {
+    "action": "Identificar funciones que usan acelerómetro o giroscopio",
+    "data": "",
+    "result": "Las funciones activadas por movimiento del dispositivo deben tener una alternativa estándar en la UI"
+  },
+  "Measure dimensions of all pointer targets (buttons, links, controls)||All targets must be at least 44x44 CSS pixels, except inline links within sentences or user-agent controlled elements": {
+    "action": "Medir las dimensiones de todos los objetivos de puntero (botones, enlaces, controles)",
+    "data": "",
+    "result": "Todos los objetivos deben medir al menos 44x44 píxeles CSS, excepto enlaces en línea dentro de frases o elementos controlados por el agente de usuario"
+  },
+  "Verify exceptions: inline text links, equivalent controls, or legal/presentation requirements||If a target is smaller than 44x44, an equivalent alternative control with adequate size must exist": {
+    "action": "Verificar las excepciones: enlaces de texto en línea, controles equivalentes o requisitos legales/de presentación",
+    "data": "",
+    "result": "Si un objetivo es menor de 44x44, debe existir un control alternativo equivalente con tamaño adecuado"
+  },
+  "Test site with multiple simultaneous input devices (keyboard + mouse + touch)||Site must support simultaneous use of different input mechanisms without restrictions": {
+    "action": "Probar el sitio con varios dispositivos de entrada simultáneos (teclado + ratón + táctil)",
+    "data": "",
+    "result": "El sitio debe admitir el uso simultáneo de distintos mecanismos de entrada sin restricciones"
+  },
+  "Identify drag and drop functions||Drag and drop functions must have alternative with simple clicks or taps": {
+    "action": "Identificar funciones de arrastrar y soltar",
+    "data": "",
+    "result": "Las funciones de arrastrar y soltar deben tener una alternativa con clics o toques simples"
+  },
+  "Measure dimensions of touch controls (buttons, links)||Touch targets must have minimum 24x24 CSS pixels or equivalent spacing": {
+    "action": "Medir las dimensiones de los controles táctiles (botones, enlaces)",
+    "data": "",
+    "result": "Los objetivos táctiles deben tener un mínimo de 24x24 píxeles CSS o espaciado equivalente"
+  },
+  "Identify jargon, technical terms, or unusual words in content||Glossary, inline definitions, or mechanism to explain uncommon terms must exist": {
+    "action": "Identificar jerga, términos técnicos o palabras inusuales en el contenido",
+    "data": "",
+    "result": "Debe existir un glosario, definiciones en línea o un mecanismo para explicar términos poco comunes"
+  },
+  "Locate abbreviations and acronyms in content||First instance of abbreviations must include full expansion or link to definition": {
+    "action": "Localizar abreviaturas y siglas en el contenido",
+    "data": "",
+    "result": "La primera aparición de las abreviaturas debe incluir su expansión completa o un enlace a la definición"
+  },
+  "Evaluate text complexity and required reading level||Complex content must have simplified version or summary for lower secondary education level": {
+    "action": "Evaluar la complejidad del texto y el nivel de lectura requerido",
+    "data": "",
+    "result": "El contenido complejo debe tener una versión simplificada o resumen para nivel de educación secundaria básica"
+  },
+  "Identify words where pronunciation is critical for comprehension||Mechanism to indicate pronunciation must exist (IPA, audio, phonetic text)": {
+    "action": "Identificar palabras donde la pronunciación es crítica para la comprensión",
+    "data": "",
+    "result": "Debe existir un mecanismo para indicar la pronunciación (IPA, audio, texto fonético)"
+  },
+  "Navigate with Tab through interactive elements||No element should cause context change (navigation, submission) just by receiving focus": {
+    "action": "Navegar con Tab por los elementos interactivos",
+    "data": "",
+    "result": "Ningún elemento debe provocar un cambio de contexto (navegación, envío) solo por recibir el foco"
+  },
+  "Interact with forms and controls without activating submit button||Field changes must not cause context change without prior warning or confirmation": {
+    "action": "Interactuar con formularios y controles sin activar el botón de envío",
+    "data": "",
+    "result": "Los cambios en los campos no deben provocar cambios de contexto sin aviso previo o confirmación"
+  },
+  "Compare menus and navigation across different pages||Repeated navigation elements must appear in same order across all pages": {
+    "action": "Comparar menús y navegación en distintas páginas",
+    "data": "",
+    "result": "Los elementos de navegación repetidos deben aparecer en el mismo orden en todas las páginas"
+  },
+  "Identify components with same function across different pages||Equivalent components must use same labels, icons, and accessible names": {
+    "action": "Identificar componentes con la misma función en distintas páginas",
+    "data": "",
+    "result": "Los componentes equivalentes deben usar las mismas etiquetas, iconos y nombres accesibles"
+  },
+  "Verify significant changes require explicit user action||Context changes, submissions, or navigation must not occur without explicit confirmation": {
+    "action": "Verificar que los cambios significativos requieran una acción explícita del usuario",
+    "data": "",
+    "result": "Los cambios de contexto, envíos o navegación no deben ocurrir sin una confirmación explícita"
+  },
+  "Search for help mechanisms in different sections||Help options must appear in consistent location throughout site": {
+    "action": "Buscar mecanismos de ayuda en distintas secciones",
+    "data": "",
+    "result": "Las opciones de ayuda deben aparecer en una ubicación consistente en todo el sitio"
+  },
+  "Submit form with intentional errors||Errors must be clearly identified in text, visually marked, and announced to screen readers": {
+    "action": "Enviar el formulario con errores intencionados",
+    "data": "",
+    "result": "Los errores deben identificarse claramente en texto, marcarse visualmente y anunciarse a lectores de pantalla"
+  },
+  "Trigger validation errors in forms||Error messages must suggest how to fix the specific problem": {
+    "action": "Provocar errores de validación en formularios",
+    "data": "",
+    "result": "Los mensajes de error deben sugerir cómo corregir el problema específico"
+  },
+  "Complete financial or legal transactions if they exist||Must allow reviewing, confirming, and correcting information before final submission": {
+    "action": "Completar transacciones financieras o legales si existen",
+    "data": "",
+    "result": "Debe permitir revisar, confirmar y corregir la información antes del envío final"
+  },
+  "Search for contextual help in forms and complex tasks||Available help must exist to complete tasks, visible or easily accessible": {
+    "action": "Buscar ayuda contextual en formularios y tareas complejas",
+    "data": "",
+    "result": "Debe existir ayuda disponible para completar las tareas, visible o fácilmente accesible"
+  },
+  "Identify forms that modify, delete, or compromise user data||Reversible mechanism (undo), verification (review before submit), or explicit confirmation must exist": {
+    "action": "Identificar formularios que modifican, eliminan o comprometen datos del usuario",
+    "data": "",
+    "result": "Debe existir un mecanismo reversible (deshacer), verificación (revisión antes de enviar) o confirmación explícita"
+  },
+  "Complete multi-step forms||Previously provided information must auto-complete or be selectable, not re-entered": {
+    "action": "Completar formularios de varios pasos",
+    "data": "",
+    "result": "La información ya proporcionada debe autocompletarse o ser seleccionable, no volverse a introducir"
+  },
+  "Test login and authentication process||Must offer accessible alternatives to visual CAPTCHA or cognitive tests (email, SMS, biometrics)": {
+    "action": "Probar el proceso de inicio de sesión y autenticación",
+    "data": "",
+    "result": "Debe ofrecer alternativas accesibles a CAPTCHA visual o pruebas cognitivas (email, SMS, biometría)"
+  },
+  "Test authentication flows to confirm no cognitive function test is required at any step||Login must not depend on memorization, transcription, or puzzle solving unless an accessible alternative or assistance is provided": {
+    "action": "Probar los flujos de autenticación para confirmar que no se requiere ninguna prueba de función cognitiva en ningún paso",
+    "data": "",
+    "result": "El inicio de sesión no debe depender de memorización, transcripción o resolución de puzles salvo que se ofrezca una alternativa accesible o asistencia"
+  },
+  "Verify password managers and copy-paste are fully supported in credential fields||Users must be able to paste credentials or use password manager autofill/biometrics without restrictions": {
+    "action": "Verificar que los gestores de contraseñas y copiar-pegar funcionen plenamente en los campos de credenciales",
+    "data": "",
+    "result": "Los usuarios deben poder pegar credenciales o usar autocompletado de gestor de contraseñas/biometría sin restricciones"
+  },
+  "Trigger dynamic messages (confirmation, error, loading)||Messages must be announced in screen readers using appropriate ARIA live regions": {
+    "action": "Provocar mensajes dinámicos (confirmación, error, carga)",
+    "data": "",
+    "result": "Los mensajes deben anunciarse en lectores de pantalla usando regiones ARIA live apropiadas"
+  },
+  "Check if prerecorded video content that has no dialogue has an audio description||": {
+    "action": "",
+    "data": "",
+    "result": "SKIP"
+  }
+}

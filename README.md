@@ -1,8 +1,8 @@
 # WCAG 2.2 Test Cases - Azure DevOps & Jira (Xray / Zephyr)
 
-Repositorio estandarizado con **86 casos de prueba** basados en los criterios de accesibilidad **WCAG 2.2**, listos para importación masiva en **Azure DevOps Test Plans** y **Jira** (compatible con Xray y Zephyr Scale).
+Repositorio estandarizado con **87 casos de prueba** basados en los criterios de accesibilidad **WCAG 2.2**, listos para importación masiva en **Azure DevOps Test Plans** y **Jira** (compatible con Xray y Zephyr Scale).
 
-Standardized repository with **86 test cases** based on **WCAG 2.2** accessibility criteria, ready for bulk import into **Azure DevOps Test Plans** and **Jira** (compatible with Xray and Zephyr Scale).
+Standardized repository with **87 test cases** based on **WCAG 2.2** accessibility criteria, ready for bulk import into **Azure DevOps Test Plans** and **Jira** (compatible with Xray and Zephyr Scale).
 
 ## Archivos Disponibles / Available Files
 
@@ -13,9 +13,9 @@ Standardized repository with **86 test cases** based on **WCAG 2.2** accessibili
 | `A11Y_Repository_Jira_ES.csv`  | Jira + Xray / Zephyr Scale | 🇪🇸 Español        |
 | `A11Y_Repository_Jira_EN.csv`  | Jira + Xray / Zephyr Scale | 🇺🇸 English        |
 
-Los cuatro archivos contienen los **mismos 86 criterios WCAG 2.2** (Niveles A, AA y AAA) con **2-4 pasos de prueba** cada uno. Selecciona el archivo según tu plataforma e idioma preferido.
+Los cuatro archivos contienen los **mismos 87 criterios WCAG 2.2** (Niveles A, AA y AAA) con **1-4 pasos de prueba** cada uno. Selecciona el archivo según tu plataforma e idioma preferido.
 
-All four files contain the **same 86 WCAG 2.2 criteria** (Levels A, AA, and AAA) with **2-4 test steps** each. Select the file based on your platform and preferred language.
+All four files contain the **same 87 WCAG 2.2 criteria** (Levels A, AA, and AAA) with **1-4 test steps** each. Select the file based on your platform and preferred language.
 
 ### Nomenclatura estandarizada / Standardized Naming
 
@@ -147,12 +147,35 @@ Si no usas Xray ni Zephyr, puedes usar el importador CSV estándar de Jira:
 | Principio           | Pautas    | Test Cases       | Niveles    |
 | ------------------- | --------- | ---------------- | ---------- |
 | **1. Perceptible**  | 1.1 – 1.4 | 29 criterios     | A, AA, AAA |
-| **2. Operable**     | 2.1 – 2.5 | 33 criterios     | A, AA, AAA |
+| **2. Operable**     | 2.1 – 2.5 | 34 criterios     | A, AA, AAA |
 | **3. Comprensible** | 3.1 – 3.3 | 21 criterios     | A, AA, AAA |
 | **4. Robusto**      | 4.1       | 3 criterios      | A, AA      |
-| **Total**           |           | **86 criterios** |            |
+| **Total**           |           | **87 criterios** |            |
 
 > **Nota**: Se incluye el criterio 4.1.1 (Parsing) que fue marcado como obsoleto en WCAG 2.2 pero se mantiene como referencia.
+
+## Pipeline de Regeneración / Regeneration Pipeline
+
+Los CSV se generan desde una fuente única de verdad. **No editar los CSV a mano**.
+
+| Archivo                | Rol                                                                 |
+| ---------------------- | ------------------------------------------------------------------- |
+| `source.json`          | Export de los 87 TCs canónicos desde Jira/Xray (tipo, pasos, labels) |
+| `fallback_steps.json`  | Pasos manuales curados para criterios ejecutados por automatización  |
+| `translations_es.json` | Traducciones ES indexadas por `action\|\|result`                     |
+| `export_jira.py`       | Extrae el test repository canónico de Jira → `source.json`           |
+| `generate.py`          | Renderiza los 4 CSV desde `source.json` + datos auxiliares           |
+
+```bash
+# 1. Exportar desde Jira (requiere credenciales en el entorno)
+export JIRA_EMAIL JIRA_API_TOKEN XRAY_CLIENT_ID XRAY_CLIENT_SECRET
+python3 export_jira.py
+
+# 2. Regenerar los CSV
+python3 generate.py
+```
+
+Si un paso manual no tiene traducción ES, `generate.py` falla indicando el paso exacto: añádala en `translations_es.json` y repita.
 
 ## Notas Técnicas
 

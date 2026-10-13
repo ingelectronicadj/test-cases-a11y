@@ -1,0 +1,154 @@
+#!/usr/bin/env python3
+"""Exporta el test repository canónico de accesibilidad desde Jira/Xray a source.json.
+
+Fuente de verdad: TCs del proyecto RD con component=12_WEALTH_GLOBAL_POSITION
+y summary "TC - [A11y]". Genera el insumo que consume generate.py para
+reconstruir los CSV de Azure/Jira.
+
+Uso:
+    export JIRA_EMAIL JIRA_API_TOKEN XRAY_CLIENT_ID XRAY_CLIENT_SECRET
+    python3 export_jira.py
+"""
+import base64
+import json
+import os
+import re
+import sys
+import urllib.error
+import urllib.request
+
+JIRA = "https://retail-commercial.atlassian.net"
+XRAY = "https://xray.cloud.getxray.app"
+JQL = ('project=RD AND issuetype=Test AND component=12_WEALTH_GLOBAL_POSITION '
+       'AND summary ~ "TC - [A11y]"')
+
+
+def die(msg):
+    sys.exit(f"error: {msg}")
+
+
+def jira_search(jql, fields):
+    out, tok = [], None
+    while True:
+        body = {"jql": jql, "maxResults": 100, "fields": fields.split(",")}
+        if tok:
+            body["nextPageToken"] = tok
+        req = urllib.request.Request(
+            f"{JIRA}/rest/api/3/search/jql", data=json.dumps(body).encode(),
+            method="POST", headers={
+                "Authorization": basic, "Accept": "application/json",
+                "Content-Type": "application/json"})
+        with urllib.request.urlopen(req) as r:
+            d = json.loads(r.read().decode())
+        out += d.get("issues", [])
+        tok = d.get("nextPageToken")
+        if not tok or d.get("isLast"):
+            break
+    return out
+
+
+def jira_issue(key, fields):
+    req = urllib.request.Request(
+        f"{JIRA}/rest/api/3/issue/{key}?fields={fields}",
+        headers={"Authorization": basic})
+    return json.loads(urllib.request.urlopen(req).read().decode())
+
+
+def xray_auth():
+    body = json.dumps({"client_id": os.environ["XRAY_CLIENT_ID"],
+                       "client_secret": os.environ["XRAY_CLIENT_SECRET"]}).encode()
+    req = urllib.request.Request(f"{XRAY}/api/v2/authenticate", data=body,
+                                 headers={"Content-Type": "application/json"})
+    return urllib.request.urlopen(req).read().decode().strip('"')
+
+
+def gql(query):
+    req = urllib.request.Request(
+        f"{XRAY}/api/v2/graphql", data=json.dumps({"query": query}).encode(),
+        headers={"Authorization": f"Bearer {xray_token}",
+                 "Content-Type": "application/json"})
+    try:
+        return json.loads(urllib.request.urlopen(req).read().decode())
+    except urllib.error.HTTPError as e:
+        die(f"graphql {e.code}: {e.read().decode()[:300]}")
+
+
+def adf_text(node):
+    if not node:
+        return ""
+    return " ".join(c.get("text", "")
+                    for n in node.get("content", [])
+                    for c in n.get("content", []))
+
+
+def criterion(summary):
+    m = re.search(r"(\d\.\d\.\d+)", summary)
+    return m.group(1) if m else None
+
+
+for var in ("JIRA_EMAIL", "JIRA_API_TOKEN", "XRAY_CLIENT_ID", "XRAY_CLIENT_SECRET"):
+    if not os.environ.get(var):
+        die(f"falta la variable de entorno {var}")
+
+basic = "Basic " + base64.b64encode(
+    f"{os.environ['JIRA_EMAIL']}:{os.environ['JIRA_API_TOKEN']}".encode()).decode()
+xray_token = xray_auth()
+
+issues = jira_search(JQL, "summary,status,labels,description")
+keys = [i["key"] for i in issues]
+meta = {}
+for i in issues:
+    f = i["fields"]
+    meta[i["key"]] = {
+        "summary": f["summary"],
+        "status": f["status"]["name"],
+        "labels": f["labels"],
+        "description": adf_text(f.get("description")),
+        "criterion": criterion(f["summary"]),
+    }
+
+# Datos Xray (tipo, pasos, definition, carpeta) en bloques de 50
+xray = {}
+for i in range(0, len(keys), 50):
+    ks = ",".join(keys[i:i + 50])
+    r = gql('{ getTests(jql:"key in (%s)", limit:100){ results{ '
+            'jira(fields:["key"]) testType{name} steps{action data result} '
+            'unstructured folder{path} } } }' % ks)
+    for t in (r.get("data") or {}).get("getTests", {}).get("results", []):
+        xray[t["jira"]["key"]] = t
+
+out = []
+for k in keys:
+    m = meta[k]
+    t = xray.get(k, {})
+    labels = m["labels"]
+    level = next((l for l in labels if l in ("A", "AA", "AAA")), None)
+    out.append({
+        "key": k,
+        "criterion": m["criterion"],
+        "title": m["summary"],
+        "status": m["status"],
+        "level": level,
+        "test_type": (t.get("testType") or {}).get("name"),
+        "labels": labels,
+        "folder": (t.get("folder") or {}).get("path"),
+        "description": m["description"],
+        "steps": [{"action": s.get("action") or "",
+                   "data": s.get("data") or "",
+                   "result": s.get("result") or ""}
+                  for s in (t.get("steps") or [])],
+        "automated_definition": (t.get("unstructured") or "").strip() or None,
+    })
+
+out.sort(key=lambda x: [int(p) for p in x["criterion"].split(".")] if x["criterion"] else [99])
+json.dump({"source": "jira", "jql": JQL, "tests": out},
+          open("source.json", "w"), ensure_ascii=False, indent=2)
+
+n_manual = sum(1 for t in out if t["test_type"] == "Manual")
+n_auto = sum(1 for t in out if t["test_type"] == "Automated")
+print(f"source.json: {len(out)} tests "
+      f"({n_manual} manual, {n_auto} automated), "
+      f"{len({t['criterion'] for t in out})} criterios")
+missing = [t["key"] for t in out if t["test_type"] == "Manual" and not t["steps"]]
+if missing:
+    print("aviso: manuales sin pasos:", missing)
