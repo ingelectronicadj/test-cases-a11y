@@ -1,9 +1,9 @@
 {
   "source": "jira",
-  "jql": "project=RD AND issuetype=Test AND component=12_WEALTH_GLOBAL_POSITION AND summary ~ \"TC - [A11y]\" AND status != Dropped",
+  "jql": "issuetype=Test AND summary ~ \"TC - [A11y]\" AND status != Dropped",
   "tests": [
     {
-      "key": "RD-91261",
+      "key": "A11Y-001",
       "criterion": "1.1.1",
       "title": "TC - [A11Y] - 1.1 Text Alternatives - 1.1.1 Non-text Content",
       "status": "To Do",
@@ -14,10 +14,9 @@
         "A11Y",
         "A11Y_IMG",
         "A11Y_MANUAL",
-        "A11Y_SCREENREADERS",
-        "A11Y_WEALTH"
+        "A11Y_SCREENREADERS"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.1  Text Alternatives: Provide text alternatives for any non-text content Success Criterion  1.1.1 Non-text Content  (Level A)",
       "steps": [
         {
@@ -34,7 +33,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91451",
+      "key": "A11Y-002",
       "criterion": "1.2.1",
       "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.1 Audio-only and Video-only (Prerecorded)",
       "status": "To Do",
@@ -43,10 +42,9 @@
       "labels": [
         "A",
         "A11Y",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.1 Audio-only and Video-only (Prerecorded)",
       "steps": [
         {
@@ -63,7 +61,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91458",
+      "key": "A11Y-003",
       "criterion": "1.2.2",
       "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.2 Captions (Prerecorded)",
       "status": "To Do",
@@ -72,10 +70,9 @@
       "labels": [
         "A",
         "A11Y",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.2 Captions (Prerecorded)",
       "steps": [
         {
@@ -92,7 +89,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91460",
+      "key": "A11Y-004",
       "criterion": "1.2.3",
       "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.3 Audio Description or Media Alternative (Prerecorded)",
       "status": "To Do",
@@ -101,10 +98,9 @@
       "labels": [
         "A",
         "A11Y",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.3 Audio Description or Media Alternative (Prerecorded)",
       "steps": [
         {
@@ -121,7 +117,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91462",
+      "key": "A11Y-005",
       "criterion": "1.2.4",
       "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.4 Captions (Live)",
       "status": "To Do",
@@ -130,10 +126,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.4 Captions (Live)",
       "steps": [
         {
@@ -150,7 +145,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91465",
+      "key": "A11Y-006",
       "criterion": "1.2.5",
       "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.5 Audio Description (Prerecorded)",
       "status": "To Do",
@@ -159,10 +154,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.5 Audio Description (Prerecorded)",
       "steps": [
         {
@@ -184,7 +178,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91467",
+      "key": "A11Y-007",
       "criterion": "1.2.6",
       "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.6 Sign Language (Prerecorded)",
       "status": "To Do",
@@ -193,10 +187,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.6 Sign Language (Prerecorded) General Objective: To verify that pre-recorded video content with audio provides extended audio descriptions when necessary to understand the content. This test case verifies whether a pre-recorded video on the web site provides extended audio descriptions at times necessary to understand the content. Extended audio descriptions provide information about actions, characters, scenes, and on-screen information that cannot be understood from the original audio of the pre-recorded video alone. Expected Result: The pre-recorded video with audio provides extended audio descriptions at times necessary to understand the content. The extended audio descriptions can be activated and provide additional information that is not available in the original audio of the video.",
       "steps": [
         {
@@ -218,7 +211,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91470",
+      "key": "A11Y-008",
       "criterion": "1.2.7",
       "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.7 Extended Audio Description (Prerecorded)",
       "status": "To Do",
@@ -227,10 +220,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.7 Extended Audio Description (Prerecorded)",
       "steps": [
         {
@@ -257,7 +249,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91474",
+      "key": "A11Y-009",
       "criterion": "1.2.8",
       "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.8 Media Alternative (Prerecorded)",
       "status": "To Do",
@@ -266,10 +258,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.8 Media Alternative (Prerecorded)",
       "steps": [
         {
@@ -291,7 +282,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91475",
+      "key": "A11Y-010",
       "criterion": "1.2.9",
       "title": "TC - [A11Y] - 1.2 Time-based Media - 1.2.9 Audio-only (Live)",
       "status": "To Do",
@@ -300,10 +291,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.2  Provide alternatives for time-based media. Success Criteria:    1.2.9 Audio-only (Live)",
       "steps": [
         {
@@ -325,7 +315,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91476",
+      "key": "A11Y-011",
       "criterion": "1.3.1",
       "title": "TC - [A11Y] - 1.3 Adaptable - 1.3.1 Info and Relationships",
       "status": "To Do",
@@ -335,10 +325,9 @@
         "A",
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_SCREENREADERS",
-        "A11Y_WEALTH"
+        "A11Y_SCREENREADERS"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.3  Create content that can be presented in different ways (for example simpler layout) without losing information or structure. Success Criteria:    1.3.1 Info and Relationships",
       "steps": [
         {
@@ -355,7 +344,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91478",
+      "key": "A11Y-012",
       "criterion": "1.3.2",
       "title": "TC - [A11Y] - 1.3 Adaptable - 1.3.2 Meaningful Sequence",
       "status": "To Do",
@@ -365,10 +354,9 @@
         "A",
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_SCREENREADERS",
-        "A11Y_WEALTH"
+        "A11Y_SCREENREADERS"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.3  Create content that can be presented in different ways (for example simpler layout) without losing information or structure. Success Criteria:    1.3.2 Meaningful Sequence",
       "steps": [
         {
@@ -385,7 +373,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91480",
+      "key": "A11Y-013",
       "criterion": "1.3.3",
       "title": "TC - [A11Y] - 1.3 Adaptable - 1.3.3 Sensory Characteristics",
       "status": "To Do",
@@ -396,10 +384,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_SCREENREADERS",
-        "A11Y_WEALTH"
+        "A11Y_SCREENREADERS"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.3  Create content that can be presented in different ways (for example simpler layout) without losing information or structure. Success Criteria:    1.3.3 Sensory Characteristics",
       "steps": [
         {
@@ -416,7 +403,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91481",
+      "key": "A11Y-014",
       "criterion": "1.3.4",
       "title": "TC - [A11Y] - 1.3 Adaptable - 1.3.4 Orientation",
       "status": "To Do",
@@ -426,10 +413,9 @@
         "A11Y",
         "A11Y_LANDSCAPE",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.3  Create content that can be presented in different ways (for example simpler layout) without losing information or structure. Success Criteria:    1.3.4 Orientation",
       "steps": [
         {
@@ -446,7 +432,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91482",
+      "key": "A11Y-015",
       "criterion": "1.3.5",
       "title": "TC - [A11Y] - 1.3 Adaptable - 1.3.5 Identify Input Purpose",
       "status": "To Do",
@@ -456,10 +442,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.3  Create content that can be presented in different ways (for example simpler layout) without losing information or structure. Success Criteria:    1.3.5 Identify Input Purpose",
       "steps": [
         {
@@ -476,7 +461,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91483",
+      "key": "A11Y-016",
       "criterion": "1.3.6",
       "title": "TC - [A11Y] - 1.3 Adaptable - 1.3.6 Identify Purpose",
       "status": "To Do",
@@ -486,10 +471,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.3  Create content that can be presented in different ways (for example simpler layout) without losing information or structure. Success Criteria:    1.3.6 Identify Purpose",
       "steps": [
         {
@@ -506,7 +490,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91484",
+      "key": "A11Y-017",
       "criterion": "1.4.1",
       "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.1 Use of Color",
       "status": "To Do",
@@ -515,10 +499,9 @@
       "labels": [
         "A",
         "A11Y",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.1 Use of Color",
       "steps": [
         {
@@ -535,7 +518,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91485",
+      "key": "A11Y-018",
       "criterion": "1.4.2",
       "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.2 Audio Control",
       "status": "To Do",
@@ -544,10 +527,9 @@
       "labels": [
         "A",
         "A11Y",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.2 Audio Control",
       "steps": [
         {
@@ -564,7 +546,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91486",
+      "key": "A11Y-019",
       "criterion": "1.4.3",
       "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.3 Contrast (Minimum)",
       "status": "To Do",
@@ -573,10 +555,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.3 Contrast (Minimum)",
       "steps": [
         {
@@ -593,7 +574,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91487",
+      "key": "A11Y-020",
       "criterion": "1.4.4",
       "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.4 Resize Text",
       "status": "To Do",
@@ -602,11 +583,10 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "A11Y_ZOOM",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.4 Resize text",
       "steps": [
         {
@@ -623,7 +603,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91488",
+      "key": "A11Y-021",
       "criterion": "1.4.5",
       "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.5 Images of Text",
       "status": "To Do",
@@ -632,10 +612,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.5 Images of Text",
       "steps": [
         {
@@ -652,7 +631,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91489",
+      "key": "A11Y-022",
       "criterion": "1.4.6",
       "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.6 Contrast (Enhanced)",
       "status": "To Do",
@@ -661,10 +640,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.6 Contrast (Enhanced)",
       "steps": [
         {
@@ -681,7 +659,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91490",
+      "key": "A11Y-023",
       "criterion": "1.4.7",
       "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.7 Low or No Background Audio",
       "status": "To Do",
@@ -690,10 +668,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.7 Low or No Background Audio",
       "steps": [
         {
@@ -710,7 +687,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91491",
+      "key": "A11Y-024",
       "criterion": "1.4.8",
       "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.8 Visual Presentation",
       "status": "To Do",
@@ -719,10 +696,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.8 Visual Presentation",
       "steps": [
         {
@@ -739,7 +715,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91492",
+      "key": "A11Y-025",
       "criterion": "1.4.9",
       "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.9 Images of Text (No Exception)",
       "status": "To Do",
@@ -748,10 +724,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.9 Images of Text (No Exception)",
       "steps": [
         {
@@ -768,7 +743,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91493",
+      "key": "A11Y-026",
       "criterion": "1.4.10",
       "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.10 Reflow",
       "status": "To Do",
@@ -778,10 +753,9 @@
         "A11Y",
         "A11Y_MANUAL",
         "A11Y_REFLOW",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.10 Reflow",
       "steps": [
         {
@@ -798,7 +772,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91494",
+      "key": "A11Y-027",
       "criterion": "1.4.11",
       "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.11 Non-text Contrast",
       "status": "To Do",
@@ -807,10 +781,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.11 Non-text Contrast",
       "steps": [
         {
@@ -827,7 +800,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91495",
+      "key": "A11Y-028",
       "criterion": "1.4.12",
       "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.12 Text Spacing",
       "status": "To Do",
@@ -837,10 +810,9 @@
         "A11Y",
         "A11Y_MANUAL",
         "A11Y_TEST-SPACING",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.12 Text Spacing",
       "steps": [
         {
@@ -857,7 +829,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91496",
+      "key": "A11Y-029",
       "criterion": "1.4.13",
       "title": "TC - [A11Y] - 1.4 Distinguishable - 1.4.13 Content on Hover or Focus",
       "status": "To Do",
@@ -866,10 +838,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/1. Perceivable",
+      "folder": "/ACCESSIBILITY/1. Perceivable",
       "description": "Guideline 1.4  Make it easier for users to see and hear content including separating foreground from background. Success Criteria:    1.4.13 Content on Hover or Focus",
       "steps": [
         {
@@ -891,7 +862,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91497",
+      "key": "A11Y-030",
       "criterion": "2.1.1",
       "title": "TC - [A11Y] - 2.1 Keyboard Accessible - 2.1.1 Keyboard",
       "status": "To Do",
@@ -902,10 +873,9 @@
         "A11Y",
         "A11Y_KEYBOARD",
         "A11Y_MANUAL",
-        "A11Y_SCREENREADERS",
-        "A11Y_WEALTH"
+        "A11Y_SCREENREADERS"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.1  All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. Success Criteria: 2.1.1 Keyboard",
       "steps": [
         {
@@ -922,7 +892,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91498",
+      "key": "A11Y-031",
       "criterion": "2.1.2",
       "title": "TC - [A11Y] - 2.1 Keyboard Accessible - 2.1.2 No Keyboard Trap",
       "status": "To Do",
@@ -933,10 +903,9 @@
         "A11Y",
         "A11Y_KEYBOARD",
         "A11Y_MANUAL",
-        "A11Y_SCREENREADERS",
-        "A11Y_WEALTH"
+        "A11Y_SCREENREADERS"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.1  All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. Success Criteria: 2.1.2 No Keyboard Trap",
       "steps": [
         {
@@ -958,7 +927,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91499",
+      "key": "A11Y-032",
       "criterion": "2.1.3",
       "title": "TC - [A11Y] - 2.1 Keyboard Accessible - 2.1.3 Keyboard (No Exception)",
       "status": "To Do",
@@ -967,10 +936,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.1  Make all functionality available from a keyboard. Success Criteria:    2.1.3 Keyboard (No Exception)",
       "steps": [
         {
@@ -987,7 +955,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91500",
+      "key": "A11Y-033",
       "criterion": "2.1.4",
       "title": "TC - [A11Y] - 2.1 Keyboard Accessible - 2.1.4 Character Key Shortcuts",
       "status": "To Do",
@@ -997,10 +965,9 @@
         "A",
         "A11Y",
         "A11Y_KEYBOARD",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.1  All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. Success Criteria: 2.1.4 Character Key Shortcut",
       "steps": [
         {
@@ -1017,7 +984,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91501",
+      "key": "A11Y-034",
       "criterion": "2.2.1",
       "title": "TC - [A11Y] - 2.2 Enough Time - 2.2.1 Timing Adjustable",
       "status": "To Do",
@@ -1028,10 +995,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_SCREENREADERS",
-        "A11Y_WEALTH"
+        "A11Y_SCREENREADERS"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.2  Give users enough time to read and use content. Success Criteria:    2.2.1 Timing Adjustable",
       "steps": [
         {
@@ -1048,7 +1014,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91502",
+      "key": "A11Y-035",
       "criterion": "2.2.2",
       "title": "TC - [A11Y] - 2.2 Enough Time - 2.2.2 Pause, Stop, Hide",
       "status": "To Do",
@@ -1057,10 +1023,9 @@
       "labels": [
         "A",
         "A11Y",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.2  Give users enough time to read and use content. Success Criteria:    2.2.2 Pause, Stop, Hide",
       "steps": [
         {
@@ -1077,7 +1042,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91503",
+      "key": "A11Y-036",
       "criterion": "2.2.3",
       "title": "TC - [A11Y] - 2.2 Enough Time - 2.2.3 No Timing",
       "status": "To Do",
@@ -1087,10 +1052,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.2  Give users enough time to read and use content. Success Criteria:    2.2.3 No Timing",
       "steps": [
         {
@@ -1107,7 +1071,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91504",
+      "key": "A11Y-037",
       "criterion": "2.2.4",
       "title": "TC - [A11Y] - 2.2 Enough Time - 2.2.4 Interruptions",
       "status": "To Do",
@@ -1116,10 +1080,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.2  Give users enough time to read and use content. Success Criteria:    2.2.4 Interruptions",
       "steps": [
         {
@@ -1136,7 +1099,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91505",
+      "key": "A11Y-038",
       "criterion": "2.2.5",
       "title": "TC - [A11Y] - 2.2 Enough Time - 2.2.5 Re-authenticating",
       "status": "To Do",
@@ -1146,10 +1109,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.2  Give users enough time to read and use content. Success Criteria:    2.2.5 Re-authenticating",
       "steps": [
         {
@@ -1166,7 +1128,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91506",
+      "key": "A11Y-039",
       "criterion": "2.2.6",
       "title": "TC - [A11Y] - 2.2 Enough Time - 2.2.6 Timeouts",
       "status": "To Do",
@@ -1176,10 +1138,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.2  Give users enough time to read and use content. Success Criteria:    2.2.6 Timeouts",
       "steps": [
         {
@@ -1196,7 +1157,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91539",
+      "key": "A11Y-040",
       "criterion": "2.3.1",
       "title": "TC - [A11Y] - 2.3 Seizures and Physical Reactions - 2.3.1 Three Flashes or Below Threshold",
       "status": "To Do",
@@ -1205,10 +1166,9 @@
       "labels": [
         "A",
         "A11Y",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.3  Do not design content in a way that is known to cause seizures or physical reactions. Success Criteria:    2.3.1 Three Flashes or Below Threshold",
       "steps": [
         {
@@ -1225,7 +1185,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91540",
+      "key": "A11Y-041",
       "criterion": "2.3.2",
       "title": "TC - [A11Y] - 2.3 Seizures and Physical Reactions - 2.3.2 Three Flashes",
       "status": "To Do",
@@ -1234,10 +1194,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.3  Do not design content in a way that is known to cause seizures or physical reactions. Success Criteria:    2.3.2 Three Flashes",
       "steps": [
         {
@@ -1254,7 +1213,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91541",
+      "key": "A11Y-042",
       "criterion": "2.3.3",
       "title": "TC - [A11Y] - 2.3 Seizures and Physical Reactions - 2.3.3 Animation from Interactions",
       "status": "To Do",
@@ -1263,10 +1222,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.3  Do not design content in a way that is known to cause seizures or physical reactions. Success Criteria:    2.3.3 Animation from Interactions",
       "steps": [
         {
@@ -1283,7 +1241,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91542",
+      "key": "A11Y-043",
       "criterion": "2.4.1",
       "title": "TC - [A11Y] - 2.4 Navigable - 2.4.1 Bypass Blocks",
       "status": "To Do",
@@ -1293,10 +1251,9 @@
         "A",
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_SCREENREADERS",
-        "A11Y_WEALTH"
+        "A11Y_SCREENREADERS"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.1 Bypass Blocks",
       "steps": [
         {
@@ -1313,7 +1270,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91543",
+      "key": "A11Y-044",
       "criterion": "2.4.2",
       "title": "TC - [A11Y] - 2.4 Navigable - 2.4.2 Page Titled",
       "status": "To Do",
@@ -1322,10 +1279,9 @@
       "labels": [
         "A",
         "A11Y",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.2 Page Titled",
       "steps": [
         {
@@ -1342,7 +1298,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91546",
+      "key": "A11Y-045",
       "criterion": "2.4.3",
       "title": "TC - [A11Y] - 2.4 Navigable - 2.4.3 Focus Order",
       "status": "To Do",
@@ -1353,10 +1309,9 @@
         "A11Y",
         "A11Y_KEYBOARD",
         "A11Y_MANUAL",
-        "A11Y_SCREENREADERS",
-        "A11Y_WEALTH"
+        "A11Y_SCREENREADERS"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.3 Focus Order",
       "steps": [
         {
@@ -1373,7 +1328,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91547",
+      "key": "A11Y-046",
       "criterion": "2.4.4",
       "title": "TC - [A11Y] - 2.4 Navigable - 2.4.4 Link Purpose (In Context)",
       "status": "To Do",
@@ -1383,10 +1338,9 @@
         "A",
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_SCREENREADERS",
-        "A11Y_WEALTH"
+        "A11Y_SCREENREADERS"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.4 Link Purpose (In Context)",
       "steps": [
         {
@@ -1403,7 +1357,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91548",
+      "key": "A11Y-047",
       "criterion": "2.4.5",
       "title": "TC - [A11Y] - 2.4 Navigable - 2.4.5 Multiple Ways",
       "status": "To Do",
@@ -1412,10 +1366,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.5 Multiple Ways",
       "steps": [
         {
@@ -1432,7 +1385,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91549",
+      "key": "A11Y-048",
       "criterion": "2.4.6",
       "title": "TC - [A11Y] - 2.4 Navigable - 2.4.6 Headings and Labels",
       "status": "To Do",
@@ -1442,10 +1395,9 @@
         "A11Y",
         "A11Y_MANUAL",
         "A11Y_SCREENREADERS",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.6 Headings and Labels",
       "steps": [
         {
@@ -1467,7 +1419,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91550",
+      "key": "A11Y-049",
       "criterion": "2.4.7",
       "title": "TC - [A11Y] - 2.4 Navigable - 2.4.7 Focus Visible",
       "status": "To Do",
@@ -1478,10 +1430,9 @@
         "A11Y_KEYBOARD",
         "A11Y_MANUAL",
         "A11Y_SCREENREADERS",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.7 Focus Visible",
       "steps": [
         {
@@ -1498,7 +1449,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91551",
+      "key": "A11Y-050",
       "criterion": "2.4.8",
       "title": "TC - [A11Y] - 2.4 Navigable - 2.4.8 Location",
       "status": "To Do",
@@ -1507,10 +1458,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.8 Location",
       "steps": [
         {
@@ -1527,7 +1477,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91552",
+      "key": "A11Y-051",
       "criterion": "2.4.9",
       "title": "TC - [A11Y] - 2.4 Navigable - 2.4.9 Link Purpose (Link Only)",
       "status": "To Do",
@@ -1536,10 +1486,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.9 Link Purpose (Link Only)",
       "steps": [
         {
@@ -1556,7 +1505,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91553",
+      "key": "A11Y-052",
       "criterion": "2.4.10",
       "title": "TC - [A11Y] - 2.4 Navigable - 2.4.10 Section Headings",
       "status": "To Do",
@@ -1565,10 +1514,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.10 Section Headings",
       "steps": [
         {
@@ -1585,7 +1533,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91555",
+      "key": "A11Y-053",
       "criterion": "2.4.11",
       "title": "TC - [A11Y] - 2.4 Navigable - 2.4.11 Focus Not Obscured (Minimum)",
       "status": "To Do",
@@ -1596,10 +1544,9 @@
         "A11Y_KEYBOARD",
         "A11Y_MANUAL",
         "A11Y_SCREENREADERS",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.11 Focus Not Obscured (Minimum)",
       "steps": [
         {
@@ -1616,7 +1563,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91556",
+      "key": "A11Y-054",
       "criterion": "2.4.12",
       "title": "TC - [A11Y] - 2.4 Navigable - 2.4.12 Focus Not Obscured (Enhanced)",
       "status": "To Do",
@@ -1625,10 +1572,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.12 Focus Not Obscured (Enhanced)",
       "steps": [
         {
@@ -1645,7 +1591,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91557",
+      "key": "A11Y-055",
       "criterion": "2.4.13",
       "title": "TC - [A11Y] - 2.4 Navigable - 2.4.13 Focus Appearance",
       "status": "To Do",
@@ -1654,10 +1600,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.4  Provide ways to help users navigate, find content, and determine where they are. Success Criteria:    2.4.13 Focus Appearance",
       "steps": [
         {
@@ -1674,7 +1619,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91558",
+      "key": "A11Y-056",
       "criterion": "2.5.1",
       "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.1 Pointer Gestures",
       "status": "To Do",
@@ -1684,10 +1629,9 @@
         "A",
         "A11Y",
         "A11Y_KEYBOARD",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.1 Pointer Gestures",
       "steps": [
         {
@@ -1704,7 +1648,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91559",
+      "key": "A11Y-057",
       "criterion": "2.5.2",
       "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.2 Pointer Cancellation",
       "status": "To Do",
@@ -1714,10 +1658,9 @@
         "A",
         "A11Y",
         "A11Y_KEYBOARD",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.2 Pointer Cancellation",
       "steps": [
         {
@@ -1734,7 +1677,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91560",
+      "key": "A11Y-058",
       "criterion": "2.5.3",
       "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.3 Label in Name",
       "status": "To Do",
@@ -1744,10 +1687,9 @@
         "A",
         "A11Y",
         "A11Y_FORMS",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.3 Label in Name",
       "steps": [
         {
@@ -1764,7 +1706,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91561",
+      "key": "A11Y-059",
       "criterion": "2.5.4",
       "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.4 Motion Actuation",
       "status": "To Do",
@@ -1773,10 +1715,9 @@
       "labels": [
         "A",
         "A11Y",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.4 Motion Actuation",
       "steps": [
         {
@@ -1793,7 +1734,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91562",
+      "key": "A11Y-060",
       "criterion": "2.5.5",
       "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.5 Target Size (Enhanced)",
       "status": "To Do",
@@ -1802,10 +1743,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.5 Target Size (Enhanced)",
       "steps": [
         {
@@ -1822,7 +1762,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91563",
+      "key": "A11Y-061",
       "criterion": "2.5.6",
       "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.6 Concurrent Input Mechanisms",
       "status": "To Do",
@@ -1831,10 +1771,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.6 Concurrent Input Mechanisms",
       "steps": [
         {
@@ -1851,7 +1790,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91564",
+      "key": "A11Y-062",
       "criterion": "2.5.7",
       "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.7 Dragging Movements",
       "status": "To Do",
@@ -1860,10 +1799,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.7 Dragging Movements",
       "steps": [
         {
@@ -1880,7 +1818,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91565",
+      "key": "A11Y-063",
       "criterion": "2.5.8",
       "title": "TC - [A11Y] - 2.5 Input Modalities - 2.5.8 Target Size (Minimum)",
       "status": "To Do",
@@ -1889,10 +1827,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/2. Operable",
+      "folder": "/ACCESSIBILITY/2. Operable",
       "description": "Guideline 2.5  Make it easier for users to operate functionality through various inputs beyond keyboard. Success Criteria:    2.5.8 Target Size (Minimum)",
       "steps": [
         {
@@ -1909,7 +1846,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91566",
+      "key": "A11Y-064",
       "criterion": "3.1.1",
       "title": "TC - [A11Y] - 3.1 Readable - 3.1.1 Language of Page",
       "status": "To Do",
@@ -1918,10 +1855,9 @@
       "labels": [
         "A",
         "A11Y",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.1  Make text content readable and understandable. Success Criteria:    3.1.1 Language of Page",
       "steps": [
         {
@@ -1938,7 +1874,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91568",
+      "key": "A11Y-065",
       "criterion": "3.1.2",
       "title": "TC - [A11Y] - 3.1 Readable - 3.1.2 Language of Parts",
       "status": "To Do",
@@ -1947,10 +1883,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.1  Make text content readable and understandable. Success Criteria:    3.1.2 Language of Parts",
       "steps": [
         {
@@ -1967,7 +1902,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91569",
+      "key": "A11Y-066",
       "criterion": "3.1.3",
       "title": "TC - [A11Y] - 3.1 Readable - 3.1.3 Unusual Words",
       "status": "To Do",
@@ -1976,10 +1911,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.1  Make text content readable and understandable. Success Criteria:    3.1.3 Unusual Words",
       "steps": [
         {
@@ -1996,7 +1930,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91571",
+      "key": "A11Y-067",
       "criterion": "3.1.4",
       "title": "TC - [A11Y] - 3.1 Readable - 3.1.4 Abbreviations",
       "status": "To Do",
@@ -2005,10 +1939,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.1  Make text content readable and understandable. Success Criteria:    3.1.4 Abbreviations",
       "steps": [
         {
@@ -2025,7 +1958,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91574",
+      "key": "A11Y-068",
       "criterion": "3.1.5",
       "title": "TC - [A11Y] - 3.1 Readable - 3.1.5 Reading Level",
       "status": "To Do",
@@ -2034,10 +1967,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.1  Make text content readable and understandable. Success Criteria:    3.1.5 Reading Level",
       "steps": [
         {
@@ -2054,7 +1986,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91577",
+      "key": "A11Y-069",
       "criterion": "3.1.6",
       "title": "TC - [A11Y] - 3.1 Readable - 3.1.6 Pronunciation",
       "status": "To Do",
@@ -2063,10 +1995,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.1  Make text content readable and understandable. Success Criteria:    3.1.6 Pronunciation",
       "steps": [
         {
@@ -2083,7 +2014,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91578",
+      "key": "A11Y-070",
       "criterion": "3.2.1",
       "title": "TC - [A11Y] - 3.2 Predictable - 3.2.1 On Focus",
       "status": "To Do",
@@ -2092,10 +2023,9 @@
       "labels": [
         "A",
         "A11Y",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.2  Make Web pages appear and operate in predictable ways. Success Criteria:    3.2.1 On Focus",
       "steps": [
         {
@@ -2112,7 +2042,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91579",
+      "key": "A11Y-071",
       "criterion": "3.2.2",
       "title": "TC - [A11Y] - 3.2 Predictable - 3.2.2 On Input",
       "status": "To Do",
@@ -2122,10 +2052,9 @@
         "A",
         "A11Y",
         "A11Y_FORMS",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.2  Make Web pages appear and operate in predictable ways. Success Criteria:    3.2.2 On Input",
       "steps": [
         {
@@ -2142,7 +2071,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91580",
+      "key": "A11Y-072",
       "criterion": "3.2.3",
       "title": "TC - [A11Y] - 3.2 Predictable - 3.2.3 Consistent Navigation",
       "status": "To Do",
@@ -2151,10 +2080,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.2  Make Web pages appear and operate in predictable ways. Success Criteria:    3.2.3 Consistent Navigation",
       "steps": [
         {
@@ -2171,7 +2099,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91581",
+      "key": "A11Y-073",
       "criterion": "3.2.4",
       "title": "TC - [A11Y] - 3.2 Predictable - 3.2.4 Consistent Identification",
       "status": "To Do",
@@ -2180,10 +2108,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.2  Make Web pages appear and operate in predictable ways. Success Criteria:    3.2.4 Consistent Identification",
       "steps": [
         {
@@ -2200,7 +2127,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91582",
+      "key": "A11Y-074",
       "criterion": "3.2.5",
       "title": "TC - [A11Y] - 3.2 Predictable - 3.2.5 Change on Request",
       "status": "To Do",
@@ -2210,10 +2137,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.2  Make Web pages appear and operate in predictable ways. Success Criteria:    3.2.5 Change on Request",
       "steps": [
         {
@@ -2230,7 +2156,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91583",
+      "key": "A11Y-075",
       "criterion": "3.2.6",
       "title": "TC - [A11Y] - 3.2 Predictable - 3.2.6 Consistent Help",
       "status": "To Do",
@@ -2239,10 +2165,9 @@
       "labels": [
         "A",
         "A11Y",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.2 Predictable: Make Web pages appear and operate in predictable ways. Success Criteria: 3.2.6 Consistent Help (A) - If a Web page contains help mechanisms, and those mechanisms are repeated on multiple Web pages within a set of Web pages, they occur in the same relative order to other page content, unless a change is initiated by the user.",
       "steps": [
         {
@@ -2259,7 +2184,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91588",
+      "key": "A11Y-076",
       "criterion": "3.3.1",
       "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.1 Error Identification",
       "status": "To Do",
@@ -2269,10 +2194,9 @@
         "A",
         "A11Y",
         "A11Y_FORMS",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.1 Error Identification",
       "steps": [
         {
@@ -2294,7 +2218,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91590",
+      "key": "A11Y-077",
       "criterion": "3.3.2",
       "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.2 Labels or Instructions",
       "status": "To Do",
@@ -2304,10 +2228,9 @@
         "A",
         "A11Y",
         "A11Y_FORMS",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.2 Labels or Instructions",
       "steps": [
         {
@@ -2324,7 +2247,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91595",
+      "key": "A11Y-078",
       "criterion": "3.3.3",
       "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.3 Error Suggestion",
       "status": "To Do",
@@ -2334,10 +2257,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.3 Error Suggestion",
       "steps": [
         {
@@ -2354,7 +2276,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91597",
+      "key": "A11Y-079",
       "criterion": "3.3.4",
       "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.4 Error Prevention (Legal, Financial, Data)",
       "status": "To Do",
@@ -2364,10 +2286,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.4 Error Prevention (Legal, Financial, Data)",
       "steps": [
         {
@@ -2384,7 +2305,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91600",
+      "key": "A11Y-080",
       "criterion": "3.3.5",
       "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.5 Help",
       "status": "To Do",
@@ -2394,10 +2315,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.5 Help",
       "steps": [
         {
@@ -2414,7 +2334,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91607",
+      "key": "A11Y-081",
       "criterion": "3.3.6",
       "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.6 Error Prevention (All)",
       "status": "To Do",
@@ -2424,10 +2344,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.6 Error Prevention (All)",
       "steps": [
         {
@@ -2454,7 +2373,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91609",
+      "key": "A11Y-082",
       "criterion": "3.3.7",
       "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.7 Redundant Entry",
       "status": "To Do",
@@ -2464,10 +2383,9 @@
         "A",
         "A11Y",
         "A11Y_FORMS",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.7 Redundant Entry",
       "steps": [
         {
@@ -2484,7 +2402,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91610",
+      "key": "A11Y-083",
       "criterion": "3.3.8",
       "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.8 Accessible Authentication (Minimum)",
       "status": "To Do",
@@ -2494,10 +2412,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.8 Accessible Authentication (Minimum)",
       "steps": [
         {
@@ -2514,7 +2431,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-300554",
+      "key": "A11Y-084",
       "criterion": "3.3.9",
       "title": "TC - [A11Y] - 3.3 Input Assistance - 3.3.9 Accessible Authentication (Enhanced)",
       "status": "To Do",
@@ -2524,10 +2441,9 @@
         "A11Y",
         "A11Y_FORMS",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AAA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/3. Understandable",
+      "folder": "/ACCESSIBILITY/3. Understandable",
       "description": "Guideline 3.3  Help users avoid and correct mistakes. Success Criteria:    3.3.9 Accessible Authentication (Enhanced)",
       "steps": [
         {
@@ -2544,7 +2460,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91613",
+      "key": "A11Y-085",
       "criterion": "4.1.1",
       "title": "TC - [A11Y] - 4.1 Compatible - 4.1.1 Parsing (Obsolete and removed)",
       "status": "To Do",
@@ -2553,10 +2469,9 @@
       "labels": [
         "A",
         "A11Y",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/4. Robust",
+      "folder": "/ACCESSIBILITY/4. Robust",
       "description": "Guideline 4.1  Maximize compatibility with current and future user agents, including assistive technologies. Success Criteria:    4.1.1 Parsing",
       "steps": [
         {
@@ -2573,7 +2488,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91614",
+      "key": "A11Y-086",
       "criterion": "4.1.2",
       "title": "TC - [A11Y] - 4.1 Compatible - 4.1.2 Name, Role, Value",
       "status": "To Do",
@@ -2583,10 +2498,9 @@
         "A",
         "A11Y",
         "A11Y_FORMS",
-        "A11Y_MANUAL",
-        "A11Y_WEALTH"
+        "A11Y_MANUAL"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/4. Robust",
+      "folder": "/ACCESSIBILITY/4. Robust",
       "description": "Guideline 4.1  Maximize compatibility with current and future user agents, including assistive technologies. Success Criteria:    4.1.2 Name, Role, Value",
       "steps": [
         {
@@ -2603,7 +2517,7 @@
       "automated_definition": null
     },
     {
-      "key": "RD-91615",
+      "key": "A11Y-087",
       "criterion": "4.1.3",
       "title": "TC - [A11Y] - 4.1 Compatible - 4.1.3 Status Messages",
       "status": "To Do",
@@ -2612,10 +2526,9 @@
       "labels": [
         "A11Y",
         "A11Y_MANUAL",
-        "A11Y_WEALTH",
         "AA"
       ],
-      "folder": "/WEALTH-GLOBAL/ACCESSIBILITY/4. Robust",
+      "folder": "/ACCESSIBILITY/4. Robust",
       "description": "Guideline 4.1  Maximize compatibility with current and future user agents, including assistive technologies. Success Criteria:    4.1.3 Status Messages",
       "steps": [
         {

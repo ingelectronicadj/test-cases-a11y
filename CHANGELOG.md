@@ -4,6 +4,13 @@ Todos los cambios relevantes de este repositorio se documentan en este archivo.
 El formato sigue [Keep a Changelog](https://keepachangelog.com/es/1.0.0/) y el
 versionado [SemVer](https://semver.org/lang/es/).
 
+## [2.0.1] - 2026-10-15
+
+### Seguridad y Privacidad
+
+- Parametrizado `export_jira.py` mediante variables de entorno (`JIRA_URL`, `JIRA_JQL`, `XRAY_URL`) eliminando URLs y filtros de proyectos internos del código fuente.
+- Anonimizados los metadatos internos en `source.json` (claves canónicas `A11Y-001` a `A11Y-087`, rutas normalizadas `/ACCESSIBILITY/<Principio>` y depuración de etiquetas internas).
+
 ## [2.0.0] - 2026-10-15
 
 Reorganización en carpetas por plataforma, soporte para **5 gestores de casos de prueba** (10 CSVs bilingües ES/EN) y paridad 1:1 completa con el repositorio canónico en Jira/Xray.
@@ -36,9 +43,8 @@ Reorganización en carpetas por plataforma, soporte para **5 gestores de casos d
 
 ## [1.1.0] - 2025-10-13
 
-Refinamiento del test repository canónico en Jira (proyecto RD, carpeta
-`WEALTH-GLOBAL/ACCESSIBILITY`) y alineación de los CSV con Jira como fuente
-única de verdad.
+Refinamiento del test repository canónico en Jira (`ACCESSIBILITY`) y
+alineación de los CSV con Jira como fuente única de verdad.
 
 ### Añadido
 
