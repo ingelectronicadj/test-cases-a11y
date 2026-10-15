@@ -42,8 +42,8 @@ Refinamiento del test repository canónico en Jira (proyecto RD, carpeta
 
 ### Añadido
 
-- Criterio **3.3.9 Accessible Authentication (Enhanced)** — nivel AAA
-- Criterio **2.5.5 Target Size (Enhanced)** — nivel AAA
+- Criterio **3.3.9 Accessible Authentication (Enhanced)** - nivel AAA
+- Criterio **2.5.5 Target Size (Enhanced)** - nivel AAA
 - Pipeline de regeneración: `export_jira.py` → `source.json` → `generate.py` → 4 CSV
 - `source.json`: exportación de los 87 TCs canónicos (tipo, pasos, etiquetas, carpeta)
 - `fallback_steps.json`: pasos manuales curados para los 26 criterios ejecutados

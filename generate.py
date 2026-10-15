@@ -232,7 +232,7 @@ def write_gitlab_csv(path, tests, fallback, trans, lang):
         principle = folder_leaf(test, lang)
         lvl = test.get("level") or "A"
         lines = [
-            f"**WCAG 2.2** — `{test['criterion']}` (Level **{lvl}**) · *{principle}*",
+            f"**WCAG 2.2** - `{test['criterion']}` (Level **{lvl}**) · *{principle}*",
             "",
             f"> {desc}",
             "",
@@ -240,7 +240,7 @@ def write_gitlab_csv(path, tests, fallback, trans, lang):
             "| :---: | :--- | :--- | :--- |",
         ]
         for i, s in enumerate(steps, 1):
-            dat = f"`{s['data']}`" if s.get("data") else "—"
+            dat = f"`{s['data']}`" if s.get("data") else "-"
             lines.append(f"| **{i}** | {s['action']} | {dat} | {s['result']} |")
         lines.append("")
         lines.append(f"### {hdr_chk}")

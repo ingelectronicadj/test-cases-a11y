@@ -80,9 +80,9 @@ Step 2:      Review text over images or gradient backgrounds
 
 | Principio / Principle | Pautas / Guidelines | Test Cases | Nivel A | Nivel AA | Nivel AAA | Pasos Totales |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **1. Perceivable / Perceptible** | `1.1` – `1.4` | **29** | 9 | 7 | 13 | 62 |
-| **2. Operable / Operable** | `2.1` – `2.5` | **34** | 14 | 8 | 12 | 72 |
-| **3. Understandable / Comprensible** | `3.1` – `3.3` | **21** | 7 | 7 | 7 | 46 |
+| **1. Perceivable / Perceptible** | `1.1` - `1.4` | **29** | 9 | 7 | 13 | 62 |
+| **2. Operable / Operable** | `2.1` - `2.5` | **34** | 14 | 8 | 12 | 72 |
+| **3. Understandable / Comprensible** | `3.1` - `3.3` | **21** | 7 | 7 | 7 | 46 |
 | **4. Robust / Robusto** | `4.1` | **3** | 2 | 1 | 0 | 7 |
 | **TOTAL WCAG 2.2** | **13 Pautas** | **87 Criterios** | **32** | **24** | **31** | **187 Pasos** |
 
@@ -95,7 +95,7 @@ Step 2:      Review text over images or gradient backgrounds
 Haz clic en tu plataforma para desplegar las instrucciones de mapeo de columnas:
 
 <details open>
-<summary><b>1. Jira — Xray Test Case Importer & Zephyr Scale</b></summary>
+<summary><b>1. Jira - Xray Test Case Importer & Zephyr Scale</b></summary>
 <br />
 
 **Archivos:** [`jira/A11Y_Repository_Jira_ES.csv`](./jira/A11Y_Repository_Jira_ES.csv) · [`jira/A11Y_Repository_Jira_EN.csv`](./jira/A11Y_Repository_Jira_EN.csv)
@@ -123,7 +123,7 @@ Haz clic en tu plataforma para desplegar las instrucciones de mapeo de columnas:
 </details>
 
 <details>
-<summary><b>2. Azure DevOps — Test Plans</b></summary>
+<summary><b>2. Azure DevOps - Test Plans</b></summary>
 <br />
 
 **Archivos:** [`azure/A11Y_Repository_Azure_ES.csv`](./azure/A11Y_Repository_Azure_ES.csv) · [`azure/A11Y_Repository_Azure_EN.csv`](./azure/A11Y_Repository_Azure_EN.csv)
