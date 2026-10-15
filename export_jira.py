@@ -20,7 +20,7 @@ import urllib.request
 JIRA = "https://retail-commercial.atlassian.net"
 XRAY = "https://xray.cloud.getxray.app"
 JQL = ('project=RD AND issuetype=Test AND component=12_WEALTH_GLOBAL_POSITION '
-       'AND summary ~ "TC - [A11y]"')
+       'AND summary ~ "TC - [A11y]" AND status != Dropped')
 
 
 def die(msg):
@@ -99,12 +99,13 @@ keys = [i["key"] for i in issues]
 meta = {}
 for i in issues:
     f = i["fields"]
+    clean_summary = f["summary"].replace("\xa0", " ").replace("  ", " ").strip()
     meta[i["key"]] = {
-        "summary": f["summary"],
+        "summary": clean_summary,
         "status": f["status"]["name"],
         "labels": f["labels"],
-        "description": adf_text(f.get("description")),
-        "criterion": criterion(f["summary"]),
+        "description": adf_text(f.get("description")).replace("\xa0", " ").strip(),
+        "criterion": criterion(clean_summary),
     }
 
 # Datos Xray (tipo, pasos, definition, carpeta) en bloques de 50

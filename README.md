@@ -22,13 +22,13 @@ All four files contain the **same 87 WCAG 2.2 criteria** (Levels A, AA, and AAA)
 Todos los test cases siguen el formato / All test cases follow the format:
 
 ```
-TC - [A11y] - {Guideline Number} - {Guideline Name} - {Criterion Number} - {Criterion Name}
+TC - [A11Y] - {Guideline Number} {Guideline Name} - {Criterion Number} {Criterion Name}
 ```
 
 **Ejemplo / Example:**
 
 ```
-TC - [A11y] - 1.2 - Time-based Media - 1.2.5 - Audio Description (Prerecorded)
+TC - [A11Y] - 1.2 Time-based Media - 1.2.5 Audio Description (Prerecorded)
 ```
 
 ---
@@ -38,21 +38,24 @@ TC - [A11y] - 1.2 - Time-based Media - 1.2.5 - Audio Description (Prerecorded)
 ### Estructura del CSV
 
 ```csv
-ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Automation Status,Area Path,State,Tags
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Step Data,Description,Priority,Automation Status,Area Path,State,Tags
 ```
 
-| Columna               | Descripción                                          | Valor por defecto                                                    |
-| --------------------- | ---------------------------------------------------- | -------------------------------------------------------------------- |
-| **ID**                | Vacío — Azure genera IDs automáticamente al importar | `""`                                                                 |
-| **Work Item Type**    | Tipo de work item                                    | `"Test Case"`                                                        |
-| **Title**             | Título estandarizado del criterio WCAG               | `"TC - [A11y] - 1.1 - Text Alternatives - 1.1.1 - Non-text Content"` |
-| **Test Step**         | Número del paso                                      | `"1"`, `"2"`, `"3"`                                                  |
-| **Step Action**       | Acción que realiza el tester                         | Texto descriptivo                                                    |
-| **Step Expected**     | Resultado esperado                                   | Texto descriptivo                                                    |
-| **Automation Status** | Estado de automatización                             | `"Not Automated"`                                                    |
-| **Area Path**         | Área del proyecto                                    | `"Accesibilidad"` (ES) / `"Accessibility"` (EN)                      |
-| **State**             | Estado del test case                                 | `"Ready"`                                                            |
-| **Tags**              | Etiquetas                                            | `"A11Y"`                                                             |
+| Columna               | Descripción                                                           | Valor por defecto                                                            |
+| --------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **ID**                | Vacío — Azure genera IDs automáticamente al importar                  | `""`                                                                         |
+| **Work Item Type**    | Tipo de work item                                                     | `"Test Case"`                                                                |
+| **Title**             | Título estandarizado del criterio WCAG                                | `"TC - [A11Y] - 1.1 Text Alternatives - 1.1.1 Non-text Content"`             |
+| **Test Step**         | Número del paso                                                       | `"1"`, `"2"`, `"3"`                                                          |
+| **Step Action**       | Acción que realiza el tester (incluye referencia `axe-core` si aplica)| Texto descriptivo                                                            |
+| **Step Expected**     | Resultado esperado                                                    | Texto descriptivo                                                            |
+| **Step Data**         | Reglas `axe-core` y tag WCAG asociados al paso                        | `"axe-core (wcag111): image-alt, role-img-alt..."`                           |
+| **Description**       | Pauta y criterio WCAG (en la fila cabecera del Test Case, ES/EN)      | `"Guideline 1.1 Text Alternatives. Success Criteria: 1.1.1..."`              |
+| **Priority**          | Prioridad del Test Case en Azure DevOps (`2` = Medium)                | `"2"`                                                                        |
+| **Automation Status** | Estado de automatización                                              | `"Not Automated"`                                                            |
+| **Area Path**         | Área y subcarpeta por principio WCAG                                  | `"Accesibilidad\1. Perceptible"` (ES) / `"Accessibility\1. Perceivable"` (EN)|
+| **State**             | Estado del test case                                                  | `"Ready"`                                                                    |
+| **Tags**              | Etiquetas (incluye nivel y tipo, paridad 1:1 con Jira)                | `"A11Y;A;A11Y_MANUAL"`                                                       |
 
 ### Pasos de Importación
 
@@ -60,7 +63,7 @@ ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Automation Status,Ar
 2. **Navega** a tu proyecto en Azure DevOps → **Test Plans** → **Test Cases**
 3. **Importa** haciendo clic en el menú (⋯) → **Import test cases from CSV**
 4. **Carga** el archivo CSV
-5. **Verifica** los 86 test cases importados y asigna testers según necesidad
+5. **Verifica** los 87 test cases importados y asigna testers según necesidad
 
 ### Personalización
 
@@ -80,20 +83,23 @@ ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Automation Status,Ar
 ### Estructura del CSV
 
 ```csv
-TCID,Test Summary,Issue Type,Priority,Labels,Step #,Action,Data,Expected Result
+TCID,Test Summary,Issue Type,Test Type,Priority,Labels,Description,Test Repository Path,Step #,Action,Data,Expected Result
 ```
 
-| Columna             | Descripción                                         | Ejemplo                                                              |
-| ------------------- | --------------------------------------------------- | -------------------------------------------------------------------- |
-| **TCID**            | ID local para agrupar pasos del mismo test          | `"1"`, `"2"`, ... `"86"`                                             |
-| **Test Summary**    | Título estandarizado del test (solo en primer paso) | `"TC - [A11y] - 1.1 - Text Alternatives - 1.1.1 - Non-text Content"` |
-| **Issue Type**      | Tipo de issue Jira (solo en primer paso)            | `"Test"`                                                             |
-| **Priority**        | Prioridad (solo en primer paso)                     | `"Medium"`                                                           |
-| **Labels**          | Etiquetas separadas por `;` (solo en primer paso)   | `"A11Y;A"`, `"A11Y;AA"`, `"A11Y;AAA"`                                |
-| **Step #**          | Número del paso                                     | `"1"`, `"2"`, `"3"`                                                  |
-| **Action**          | Acción del paso de prueba                           | Texto descriptivo                                                    |
-| **Data**            | Datos de prueba (vacío por defecto)                 | `""`                                                                 |
-| **Expected Result** | Resultado esperado                                  | Texto descriptivo                                                    |
+| Columna                  | Descripción                                                   | Ejemplo                                                              |
+| ------------------------ | ------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **TCID**                 | ID local para agrupar pasos del mismo test                    | `"1"`, `"2"`, ... `"87"`                                             |
+| **Test Summary**         | Título estandarizado del test (solo en primer paso)           | `"TC - [A11Y] - 1.1 Text Alternatives - 1.1.1 Non-text Content"`     |
+| **Issue Type**           | Tipo de issue Jira (solo en primer paso)                      | `"Test"`                                                             |
+| **Test Type**            | Tipo de test en Xray (solo en primer paso)                    | `"Manual"`                                                           |
+| **Priority**             | Prioridad (solo en primer paso)                               | `"Medium"`                                                           |
+| **Labels**               | Etiquetas separadas por `;` (solo en primer paso)             | `"A11Y;A;A11Y_MANUAL"`, `"A11Y;AA;A11Y_MANUAL"`                      |
+| **Description**          | Pauta y criterio WCAG (solo en primer paso, ES/EN)            | `"Guideline 1.1 Text Alternatives. Success Criteria: 1.1.1..."`      |
+| **Test Repository Path** | Carpeta por principio en Xray Test Repository                 | `"1. Perceivable"` (EN) / `"1. Perceptible"` (ES)                    |
+| **Step #**               | Número del paso                                               | `"1"`, `"2"`, `"3"`                                                  |
+| **Action**               | Acción del paso de prueba                                     | Texto descriptivo                                                    |
+| **Data**                 | Reglas `axe-core` y tag WCAG asociados (cuando aplica)        | `"axe-core (wcag111): image-alt, role-img-alt..."`                   |
+| **Expected Result**      | Resultado esperado                                            | Texto descriptivo                                                    |
 
 ### Importar con Xray
 
@@ -104,13 +110,16 @@ TCID,Test Summary,Issue Type,Priority,Labels,Step #,Action,Data,Expected Result
 5. **Mapea** las columnas:
    - `Test Summary` → Summary
    - `Issue Type` → Issue Type
+   - `Test Type` → Test Type
    - `Priority` → Priority
    - `Labels` → Labels
+   - `Description` → Description
+   - `Test Repository Path` → Test Repository Path
    - `Action` → Step Action
    - `Data` → Step Data
    - `Expected Result` → Step Expected Result
    - `TCID` → Test Case Identifier (para agrupar pasos)
-6. **Importa** y verifica los 86 test cases
+6. **Importa** y verifica los 87 test cases
 
 ### Importar con Zephyr Scale
 

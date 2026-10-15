@@ -4,6 +4,37 @@ Todos los cambios relevantes de este repositorio se documentan en este archivo.
 El formato sigue [Keep a Changelog](https://keepachangelog.com/es/1.0.0/) y el
 versionado [SemVer](https://semver.org/lang/es/).
 
+## [1.2.0] - 2026-10-15
+
+Paridad 1:1 completa entre el repositorio canónico en Jira/Xray
+(`WEALTH-GLOBAL/ACCESSIBILITY`) y los 4 archivos CSV.
+
+### Añadido
+
+- **Unificación de los 87 TCs como `Manual` con pasos completos en Jira/Xray y CSV**:
+  los 26 criterios que estaban como `Automated` sin tabla de pasos en Xray pasan a
+  `Manual` con 2 pasos detallados cada uno (incrementando el total de **166 → 187 pasos**),
+  conservando en la columna `Data` del primer paso sus reglas y etiquetas `axe-core`
+  (`axe-core (wcagXXX): ...`).
+- **Nuevas columnas de paridad 1:1 en `A11Y_Repository_Jira_*.csv`**:
+  - `Test Type` (`Manual`)
+  - `Description` (pauta y criterio WCAG en inglés en `EN.csv` y en español en `ES.csv`)
+  - `Test Repository Path` (`1. Perceivable`..`4. Robust` en EN / `1. Perceptible`..`4. Robusto` en ES)
+  - `Labels` enriquecidos (`A11Y;<Nivel>;A11Y_MANUAL`)
+  - `Data` poblado con las reglas `axe-core` de cada criterio aplicable
+- **Paridad 1:1 también en `A11Y_Repository_Azure_*.csv` (ES y EN)**:
+  - Añadidas las columnas `Description`, `Priority` (`"2"`) y `Step Data` (además de embeber `[axe-core ...]` en `Step Action` cuando aplica).
+  - `Area Path` jerárquico por principio WCAG (`Accesibilidad\1. Perceptible` en ES / `Accessibility\1. Perceivable` en EN).
+  - `Tags` completos (`A11Y;<Nivel>;A11Y_MANUAL`), idénticos a las etiquetas de Jira.
+- `translations_es.json` ampliado de **171 a 192 traducciones ES**.
+
+### Cambiado
+
+- Normalizados los espacios de no separación (`\u00a0`) a espacios ASCII estándar
+  en los 86 títulos de Jira, `source.json` y los 4 CSV.
+- Actualizado `README.md` con las nuevas columnas de Xray/Azure y corregidas las
+  referencias residuales de 86 a 87 test cases.
+
 ## [1.1.0] - 2025-10-13
 
 Refinamiento del test repository canónico en Jira (proyecto RD, carpeta
